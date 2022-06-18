@@ -55,8 +55,6 @@ public class PoseGraphic extends Graphic {
   private final Paint rightPaint;
   private final Paint whitePaint;
 
-
-  private double leftBicepAng = -1;
   PoseGraphic(
       GraphicOverlay overlay,
       Pose pose,
@@ -88,40 +86,6 @@ public class PoseGraphic extends Graphic {
     rightPaint.setColor(Color.YELLOW);
   }
 
-  PoseGraphic(
-          GraphicOverlay overlay,
-          Pose pose,
-          boolean showInFrameLikelihood,
-          boolean visualizeZ,
-          boolean rescaleZForVisualization,
-          List<String> poseClassification,
-          double leftBicepAng) {
-    super(overlay);
-    this.pose = pose;
-    this.showInFrameLikelihood = showInFrameLikelihood;
-    this.visualizeZ = visualizeZ;
-    this.rescaleZForVisualization = rescaleZForVisualization;
-
-    this.poseClassification = poseClassification;
-    classificationTextPaint = new Paint();
-    classificationTextPaint.setColor(Color.WHITE);
-    classificationTextPaint.setTextSize(POSE_CLASSIFICATION_TEXT_SIZE);
-    classificationTextPaint.setShadowLayer(5.0f, 0f, 0f, Color.BLACK);
-
-    this.leftBicepAng = leftBicepAng;
-
-    whitePaint = new Paint();
-    whitePaint.setStrokeWidth(STROKE_WIDTH);
-    whitePaint.setColor(Color.WHITE);
-    whitePaint.setTextSize(IN_FRAME_LIKELIHOOD_TEXT_SIZE);
-    leftPaint = new Paint();
-    leftPaint.setStrokeWidth(STROKE_WIDTH);
-    leftPaint.setColor(Color.GREEN);
-    rightPaint = new Paint();
-    rightPaint.setStrokeWidth(STROKE_WIDTH);
-    rightPaint.setColor(Color.YELLOW);
-  }
-
   @Override
   public void draw(Canvas canvas) {
     List<PoseLandmark> landmarks = pose.getAllPoseLandmarks();
@@ -129,16 +93,6 @@ public class PoseGraphic extends Graphic {
       return;
     }
 
-    // NEW SHIT draw the left bicep angle
-    if (leftBicepAng != -1) {
-      Paint tempPaint = new Paint();
-      tempPaint.setColor(Color.WHITE);
-      tempPaint.setTextSize(600f);
-      canvas.drawText(String.valueOf(leftBicepAng),
-              50,
-              500,
-              tempPaint);
-    }
 
     // Draw pose classification text.
     float classificationX = POSE_CLASSIFICATION_TEXT_SIZE * 0.5f;

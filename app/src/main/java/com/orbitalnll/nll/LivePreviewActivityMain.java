@@ -62,9 +62,6 @@ public final class LivePreviewActivityMain extends AppCompatActivity
   private PoseDetectorProcessor myPP;
 
 
-
-
-
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);

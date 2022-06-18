@@ -55,8 +55,6 @@ public class PoseDetectorProcessor
   private String chooseEx;
 
 
-
-
   private PoseClassifierProcessor poseClassifierProcessor;
   /** Internal class to hold Pose and classification results. */
   protected static class PoseWithClassification {
