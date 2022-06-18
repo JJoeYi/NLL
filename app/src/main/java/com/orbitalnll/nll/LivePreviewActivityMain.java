@@ -20,9 +20,13 @@ import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.ArrayAdapter;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
-import android.widget.Toast;
+import android.widget.Spinner;
 import android.widget.ToggleButton;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -35,20 +39,28 @@ import com.orbitalnll.nll.preference.SettingsActivity;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 /** Live preview demo for ML Kit APIs. */
 @KeepName
 public final class LivePreviewActivityMain extends AppCompatActivity
-    implements CompoundButton.OnCheckedChangeListener { // REMOVED: OnItemSelectedListener
+    implements CompoundButton.OnCheckedChangeListener, OnItemSelectedListener { // REMOVED: OnItemSelectedListener
   private static final String POSE_DETECTION = "Pose Detection";
-
   private static final String TAG = "LivePreviewActivity";
+
+  private static final String PUSH_UP = "Push Up";
+  private static final String SQUAT = " Squat";
+  private static final String SIT_UP = "Sit Up";
+
 
   private CameraSource cameraSource = null;
   private CameraSourcePreview preview;
   private GraphicOverlay graphicOverlay;
   private String selectedModel = POSE_DETECTION;
+  private String selectedEx = PUSH_UP;
   private ArrayList<String> REQUIRED_RUNTIME_PERMISSIONS = new ArrayList<String>();
+  private PoseDetectorProcessor myPP;
+
 
 
 
@@ -79,6 +91,25 @@ public final class LivePreviewActivityMain extends AppCompatActivity
       Log.d(TAG, "graphicOverlay is null");
     }
 
+    Spinner spinner = findViewById(R.id.spinner);
+    List<String> exerciseList = new ArrayList<>();
+    exerciseList.add(PUSH_UP);
+    exerciseList.add(SQUAT);
+    exerciseList.add(SIT_UP);
+
+
+    // Creating adapter for spinner
+    ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(this, R.layout.spinner_style, exerciseList);
+    // Drop down layout style - list view with radio button
+    dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+    // attaching data adapter to spinner
+    spinner.setAdapter(dataAdapter);
+    spinner.setOnItemSelectedListener(this);
+
+
+
+
+    // Camera Flip
     ToggleButton facingSwitch = findViewById(R.id.facing_switch);
     facingSwitch.setOnCheckedChangeListener(this);
 
@@ -97,21 +128,21 @@ public final class LivePreviewActivityMain extends AppCompatActivity
   }
 
 
-//  @Override
-//  public synchronized void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
-//    // An item was selected. You can retrieve the selected item using
-//    // parent.getItemAtPosition(pos)
-//    selectedModel = parent.getItemAtPosition(pos).toString();
-//    Log.d(TAG, "Selected model: " + selectedModel);
-//    preview.stop();
-//    createCameraSource(selectedModel);
-//    startCameraSource();
-//  }
+  @Override
+  public synchronized void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
+    // An item was selected. You can retrieve the selected item using
+    // parent.getItemAtPosition(pos)
+    selectedEx = parent.getItemAtPosition(pos).toString();
+    Log.d(TAG, "Selected exercise: " + selectedEx);
+    preview.stop();
+    createCameraSource(selectedEx);
+    startCameraSource();
+  }
 
-//  @Override
-//  public void onNothingSelected(AdapterView<?> parent) {
-//    // Do nothing.
-//  }
+  @Override
+  public void onNothingSelected(AdapterView<?> parent) {
+    // Do nothing.
+  }
 
   @Override
   public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -127,44 +158,64 @@ public final class LivePreviewActivityMain extends AppCompatActivity
     startCameraSource();
   }
 
-  private void createCameraSource(String model) {
+  private void createCameraSource(String exercise) {
     // If there's no existing cameraSource, create one.
     if (cameraSource == null) {
       cameraSource = new CameraSource(this, graphicOverlay);
     }
 
-    try {
-      switch (model) {
-        case POSE_DETECTION:
-          PoseDetectorOptionsBase poseDetectorOptions =
-              PreferenceUtils.getPoseDetectorOptionsForLivePreview(this);
-          Log.i(TAG, "Using Pose Detector with options " + poseDetectorOptions);
-          boolean shouldShowInFrameLikelihood =
-              PreferenceUtils.shouldShowPoseDetectionInFrameLikelihoodLivePreview(this);
-          boolean visualizeZ = PreferenceUtils.shouldPoseDetectionVisualizeZ(this);
-          boolean rescaleZ = PreferenceUtils.shouldPoseDetectionRescaleZForVisualization(this);
-          boolean runClassification = PreferenceUtils.shouldPoseDetectionRunClassification(this);
-          cameraSource.setMachineLearningFrameProcessor(
-              new PoseDetectorProcessor(
-                  this,
-                  poseDetectorOptions,
-                  shouldShowInFrameLikelihood,
-                  visualizeZ,
-                  rescaleZ,
-                  runClassification,
-                  /* isStreamMode = */ true));
-          break;
-        default:
-          Log.e(TAG, "Unknown model: " + model);
-      }
-    } catch (RuntimeException e) {
-      Log.e(TAG, "Can not create image processor: " + model, e);
-      Toast.makeText(
-              getApplicationContext(),
-              "Can not create image processor: " + e.getMessage(),
-              Toast.LENGTH_LONG)
-          .show();
-    }
+    // pass Pose dectector into CameraSource + Options
+    PoseDetectorOptionsBase poseDetectorOptions =
+            PreferenceUtils.getPoseDetectorOptionsForLivePreview(this);
+    Log.i(TAG, "Using Pose Detector with options " + poseDetectorOptions);
+    boolean shouldShowInFrameLikelihood =
+            PreferenceUtils.shouldShowPoseDetectionInFrameLikelihoodLivePreview(this);
+    boolean visualizeZ = PreferenceUtils.shouldPoseDetectionVisualizeZ(this);
+    boolean rescaleZ = PreferenceUtils.shouldPoseDetectionRescaleZForVisualization(this);
+    boolean runClassification = PreferenceUtils.shouldPoseDetectionRunClassification(this);
+
+    cameraSource.setMachineLearningFrameProcessor(new PoseDetectorProcessor(
+            this,
+            poseDetectorOptions,
+            shouldShowInFrameLikelihood,
+            visualizeZ,
+            rescaleZ,
+            runClassification,
+            /* isStreamMode = */ true,
+            exercise));
+
+    myPP = (new PoseDetectorProcessor( // NEW SHIT
+            this,
+            poseDetectorOptions,
+            shouldShowInFrameLikelihood,
+            visualizeZ,
+            rescaleZ,
+            runClassification,
+            /* isStreamMode = */ true));
+
+//    try {
+//      switch (exercise) {
+//        case PUSH_UP:
+//          break;
+//
+//        case SQUAT:
+//          break;
+//
+//        case SIT_UP:
+//          break;
+//
+//        default:
+//          Log.e(TAG, "Unknown selected exercise: " + exercise);
+//      }
+//
+//    } catch (RuntimeException e) {
+//      Log.e(TAG, "Can not process selected exercise: " + exercise, e);
+//      Toast.makeText(
+//              getApplicationContext(),
+//              "Can not process selected exercise: " + e.getMessage(),
+//              Toast.LENGTH_LONG)
+//          .show();
+//    }
   }
 
   /**

@@ -24,13 +24,14 @@ import androidx.annotation.NonNull;
 import com.google.android.gms.tasks.Task;
 import com.google.android.odml.image.MlImage;
 import com.google.mlkit.vision.common.InputImage;
-import com.orbitalnll.nll.GraphicOverlay;
-import com.orbitalnll.nll.VisionProcessorBase;
-import com.orbitalnll.nll.posedetector.classification.PoseClassifierProcessor;
 import com.google.mlkit.vision.pose.Pose;
 import com.google.mlkit.vision.pose.PoseDetection;
 import com.google.mlkit.vision.pose.PoseDetector;
 import com.google.mlkit.vision.pose.PoseDetectorOptionsBase;
+import com.orbitalnll.nll.BodyInfo;
+import com.orbitalnll.nll.GraphicOverlay;
+import com.orbitalnll.nll.VisionProcessorBase;
+import com.orbitalnll.nll.posedetector.classification.PoseClassifierProcessor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,6 +52,10 @@ public class PoseDetectorProcessor
   private final boolean isStreamMode;
   private final Context context;
   private final Executor classificationExecutor;
+  private String chooseEx;
+
+
+
 
   private PoseClassifierProcessor poseClassifierProcessor;
   /** Internal class to hold Pose and classification results. */
@@ -72,6 +77,7 @@ public class PoseDetectorProcessor
     }
   }
 
+  // DEFAULT constructor
   public PoseDetectorProcessor(
       Context context,
       PoseDetectorOptionsBase options,
@@ -91,6 +97,28 @@ public class PoseDetectorProcessor
     classificationExecutor = Executors.newSingleThreadExecutor();
   }
 
+  // Constructor with additional chooseEx field
+  public PoseDetectorProcessor(
+          Context context,
+          PoseDetectorOptionsBase options,
+          boolean showInFrameLikelihood,
+          boolean visualizeZ,
+          boolean rescaleZForVisualization,
+          boolean runClassification,
+          boolean isStreamMode,
+          String chooseEx) {
+    super(context);
+    this.showInFrameLikelihood = showInFrameLikelihood;
+    this.visualizeZ = visualizeZ;
+    this.rescaleZForVisualization = rescaleZForVisualization;
+    detector = PoseDetection.getClient(options);
+    this.runClassification = runClassification;
+    this.isStreamMode = isStreamMode;
+    this.context = context;
+    classificationExecutor = Executors.newSingleThreadExecutor();
+    this.chooseEx = chooseEx;
+  }
+
   @Override
   public void stop() {
     super.stop();
@@ -105,6 +133,9 @@ public class PoseDetectorProcessor
             classificationExecutor,
             task -> {
               Pose pose = task.getResult();
+
+
+
               List<String> classificationResult = new ArrayList<>();
               if (runClassification) {
                 if (poseClassifierProcessor == null) {
@@ -124,6 +155,7 @@ public class PoseDetectorProcessor
             classificationExecutor,
             task -> {
               Pose pose = task.getResult();
+
               List<String> classificationResult = new ArrayList<>();
               if (runClassification) {
                 if (poseClassifierProcessor == null) {
@@ -139,6 +171,7 @@ public class PoseDetectorProcessor
   protected void onSuccess(
       @NonNull PoseWithClassification poseWithClassification,
       @NonNull GraphicOverlay graphicOverlay) {
+
     graphicOverlay.add(
         new PoseGraphic(
             graphicOverlay,
@@ -146,7 +179,11 @@ public class PoseDetectorProcessor
             showInFrameLikelihood,
             visualizeZ,
             rescaleZForVisualization,
-            poseWithClassification.classificationResult));
+            poseWithClassification.classificationResult
+            ));
+
+    BodyInfo.drawEx(graphicOverlay, chooseEx, poseWithClassification.pose);
+
   }
 
   @Override

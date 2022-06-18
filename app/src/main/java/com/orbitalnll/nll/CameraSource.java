@@ -671,7 +671,7 @@ public class CameraSource {
             return;
           }
 
-          // Hold onto the frame data locally, so that we can use this for detection
+          // Hold onto the frame data LOCALLY, so that we can use this for detection
           // below.  We need to clear pendingFrameData to ensure that this buffer isn't
           // recycled back to the camera before we are done using that data.
           data = pendingFrameData;
@@ -696,7 +696,8 @@ public class CameraSource {
         } catch (Exception t) {
           Log.e(TAG, "Exception thrown from receiver.", t);
         } finally {
-          camera.addCallbackBuffer(data.array());
+          camera.addCallbackBuffer(data.array()); // add back the original frame to the camera to be displayed
+                                                  // after we are done processing
         }
       }
     }
