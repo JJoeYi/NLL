@@ -124,7 +124,6 @@ public final class LivePreviewActivityMain extends AppCompatActivity
     startCameraSource();
   }
 
-
   @Override
   public synchronized void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
     // An item was selected. You can retrieve the selected item using

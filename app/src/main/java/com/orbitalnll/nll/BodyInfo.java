@@ -59,7 +59,6 @@ public class BodyInfo {
                 break;
 
             default:
-
         }
     }
 
