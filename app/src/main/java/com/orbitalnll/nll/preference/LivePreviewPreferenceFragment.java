@@ -24,8 +24,8 @@ import android.preference.PreferenceFragment;
 
 import androidx.annotation.StringRes;
 
-import com.orbitalnll.nll.CameraSource;
-import com.orbitalnll.nll.CameraSource.SizePair;
+import com.orbitalnll.nll.camera.CameraSource;
+import com.orbitalnll.nll.camera.CameraSource.SizePair;
 import com.orbitalnll.nll.R;
 
 import java.util.HashMap;

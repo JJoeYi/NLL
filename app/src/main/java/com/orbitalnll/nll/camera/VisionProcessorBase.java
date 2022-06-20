@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.orbitalnll.nll;
+package com.orbitalnll.nll.camera;
 
 import static java.lang.Math.max;
 import static java.lang.Math.min;
@@ -44,6 +44,9 @@ import com.google.android.odml.image.MediaMlImageBuilder;
 import com.google.android.odml.image.MlImage;
 import com.google.mlkit.common.MlKitException;
 import com.google.mlkit.vision.common.InputImage;
+import com.orbitalnll.nll.BitmapUtils;
+import com.orbitalnll.nll.ScopedExecutor;
+import com.orbitalnll.nll.TemperatureMonitor;
 import com.orbitalnll.nll.preference.PreferenceUtils;
 
 import java.nio.ByteBuffer;

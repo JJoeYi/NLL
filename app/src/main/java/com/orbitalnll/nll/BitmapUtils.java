@@ -34,6 +34,8 @@ import androidx.camera.core.ExperimentalGetImage;
 import androidx.camera.core.ImageProxy;
 import androidx.exifinterface.media.ExifInterface;
 
+import com.orbitalnll.nll.camera.FrameMetadata;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;

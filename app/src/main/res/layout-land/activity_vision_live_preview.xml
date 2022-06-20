@@ -6,14 +6,14 @@
     android:layout_height="match_parent"
     android:keepScreenOn="true">
 
-    <com.orbitalnll.nll.CameraSourcePreview
+    <com.orbitalnll.nll.camera.CameraSourcePreview
         android:id="@+id/preview_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/control"/>
 
-    <com.orbitalnll.nll.GraphicOverlay
+    <com.orbitalnll.nll.camera.GraphicOverlay
         android:id="@+id/graphic_overlay"
         android:layout_width="0dp"
         android:layout_height="0dp"

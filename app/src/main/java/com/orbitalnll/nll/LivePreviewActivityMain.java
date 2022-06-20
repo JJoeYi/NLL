@@ -29,10 +29,14 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.ToggleButton;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.common.annotation.KeepName;
 import com.google.mlkit.vision.pose.PoseDetectorOptionsBase;
+import com.orbitalnll.nll.camera.CameraSource;
+import com.orbitalnll.nll.camera.CameraSourcePreview;
+import com.orbitalnll.nll.camera.GraphicOverlay;
 import com.orbitalnll.nll.posedetector.PoseDetectorProcessor;
 import com.orbitalnll.nll.preference.PreferenceUtils;
 import com.orbitalnll.nll.preference.SettingsActivity;
@@ -44,7 +48,7 @@ import java.util.List;
 /** Live preview demo for ML Kit APIs. */
 @KeepName
 public final class LivePreviewActivityMain extends AppCompatActivity
-    implements CompoundButton.OnCheckedChangeListener, OnItemSelectedListener { // REMOVED: OnItemSelectedListener
+    implements CompoundButton.OnCheckedChangeListener, OnItemSelectedListener {
   private static final String POSE_DETECTION = "Pose Detection";
   private static final String TAG = "LivePreviewActivity";
 

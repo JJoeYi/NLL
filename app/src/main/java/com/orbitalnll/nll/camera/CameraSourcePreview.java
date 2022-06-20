@@ -1,4 +1,4 @@
-package com.orbitalnll.nll;
+package com.orbitalnll.nll.camera;
 
 /*
  * Copyright 2020 Google LLC. All rights reserved.

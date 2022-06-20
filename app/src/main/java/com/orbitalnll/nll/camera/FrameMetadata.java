@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.orbitalnll.nll;
+package com.orbitalnll.nll.camera;
 
 /** Describing a frame info. */
 public class FrameMetadata {

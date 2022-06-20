@@ -29,8 +29,8 @@ import com.google.mlkit.vision.pose.PoseDetection;
 import com.google.mlkit.vision.pose.PoseDetector;
 import com.google.mlkit.vision.pose.PoseDetectorOptionsBase;
 import com.orbitalnll.nll.BodyInfo;
-import com.orbitalnll.nll.GraphicOverlay;
-import com.orbitalnll.nll.VisionProcessorBase;
+import com.orbitalnll.nll.camera.GraphicOverlay;
+import com.orbitalnll.nll.camera.VisionProcessorBase;
 import com.orbitalnll.nll.posedetector.classification.PoseClassifierProcessor;
 
 import java.util.ArrayList;

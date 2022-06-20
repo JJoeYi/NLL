@@ -31,8 +31,8 @@ import com.google.common.base.Preconditions;
 import com.google.mlkit.vision.pose.PoseDetectorOptionsBase;
 import com.google.mlkit.vision.pose.accurate.AccuratePoseDetectorOptions;
 import com.google.mlkit.vision.pose.defaults.PoseDetectorOptions;
-import com.orbitalnll.nll.CameraSource;
-import com.orbitalnll.nll.CameraSource.SizePair;
+import com.orbitalnll.nll.camera.CameraSource;
+import com.orbitalnll.nll.camera.CameraSource.SizePair;
 import com.orbitalnll.nll.R;
 
 /** Utility class to retrieve shared preferences. */

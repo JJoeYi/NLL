@@ -8,6 +8,7 @@ import android.graphics.Paint;
 
 import com.google.mlkit.vision.pose.Pose;
 import com.google.mlkit.vision.pose.PoseLandmark;
+import com.orbitalnll.nll.camera.GraphicOverlay;
 
 public class BodyInfo {
     private static final String PUSH_UP = "Push Up";

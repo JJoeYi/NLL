@@ -1,4 +1,4 @@
-package com.orbitalnll.nll;/*
+package com.orbitalnll.nll.camera;/*
  * Copyright 2020 Google LLC. All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package com.orbitalnll.nll;/*
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 
-import com.orbitalnll.nll.GraphicOverlay.Graphic;
+import com.orbitalnll.nll.camera.GraphicOverlay.Graphic;
 
 /** Draw camera image to background. */
 public class CameraImageGraphic extends Graphic {

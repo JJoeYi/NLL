@@ -25,8 +25,8 @@ import android.graphics.Paint;
 
 import com.google.common.primitives.Ints;
 import com.google.mlkit.vision.common.PointF3D;
-import com.orbitalnll.nll.GraphicOverlay;
-import com.orbitalnll.nll.GraphicOverlay.Graphic;
+import com.orbitalnll.nll.camera.GraphicOverlay;
+import com.orbitalnll.nll.camera.GraphicOverlay.Graphic;
 import com.google.mlkit.vision.pose.Pose;
 import com.google.mlkit.vision.pose.PoseLandmark;
 
