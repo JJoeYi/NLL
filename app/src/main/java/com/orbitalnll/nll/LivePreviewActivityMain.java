@@ -18,28 +18,31 @@ package com.orbitalnll.nll;
 
 import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.hardware.Camera;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.CompoundButton;
-import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 
-
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.common.annotation.KeepName;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.mlkit.vision.pose.PoseDetectorOptionsBase;
 import com.orbitalnll.nll.camera.CameraSource;
 import com.orbitalnll.nll.camera.CameraSourcePreview;
 import com.orbitalnll.nll.camera.GraphicOverlay;
 import com.orbitalnll.nll.posedetector.PoseDetectorProcessor;
 import com.orbitalnll.nll.preference.PreferenceUtils;
-import com.orbitalnll.nll.preference.SettingsActivity;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -48,7 +51,7 @@ import java.util.List;
 /** Live preview demo for ML Kit APIs. */
 @KeepName
 public final class LivePreviewActivityMain extends AppCompatActivity
-    implements CompoundButton.OnCheckedChangeListener, OnItemSelectedListener {
+    implements CompoundButton.OnCheckedChangeListener, OnItemSelectedListener, BottomNavigationView.OnItemSelectedListener {
   private static final String POSE_DETECTION = "Pose Detection";
   private static final String TAG = "LivePreviewActivity";
 
@@ -64,11 +67,15 @@ public final class LivePreviewActivityMain extends AppCompatActivity
   private String selectedEx = PUSH_UP;
   private ArrayList<String> REQUIRED_RUNTIME_PERMISSIONS = new ArrayList<String>();
   private PoseDetectorProcessor myPP;
+  private BottomNavigationView bNV;
+  private ToggleButton cameraFlip;
+  private ToggleButton flashFlip;
 
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
+    //TODO: add logs
     Log.d(TAG, "onCreate");
 
     setContentView(R.layout.activity_vision_live_preview);
@@ -92,6 +99,14 @@ public final class LivePreviewActivityMain extends AppCompatActivity
       Log.d(TAG, "graphicOverlay is null");
     }
 
+    // Bottom Navigation
+    bNV = findViewById(R.id.bottom_nav_layout).findViewById(R.id.bottom_navigation);
+    bNV.setSelectedItemId(R.id.page_smartrack);
+    bNV.setOnItemSelectedListener(this);
+
+
+
+
     Spinner spinner = findViewById(R.id.spinner);
     List<String> exerciseList = new ArrayList<>();
     exerciseList.add(PUSH_UP);
@@ -107,22 +122,15 @@ public final class LivePreviewActivityMain extends AppCompatActivity
     spinner.setAdapter(dataAdapter);
     spinner.setOnItemSelectedListener(this);
 
-
-
-
     // Camera Flip
-    ToggleButton facingSwitch = findViewById(R.id.facing_switch);
-    facingSwitch.setOnCheckedChangeListener(this);
+    cameraFlip = findViewById(R.id.facing_switch);
+    cameraFlip.setOnCheckedChangeListener(this);
 
-    ImageView settingsButton = findViewById(R.id.settings_button);
-    //TODO: fix pressing settings button
-    settingsButton.setOnClickListener(
-        v -> {
-          Intent intent = new Intent(getApplicationContext(), SettingsActivity.class);
-          intent.putExtra(
-              SettingsActivity.EXTRA_LAUNCH_SOURCE, SettingsActivity.LaunchSource.LIVE_PREVIEW);
-          startActivity(intent);
-        });
+    // Flash Flip
+    flashFlip = findViewById(R.id.flash_button);
+    flashFlip.setOnCheckedChangeListener(this);
+
+   //TODO: settings button removed
 
     createCameraSource(selectedModel);
     startCameraSource();
@@ -146,16 +154,38 @@ public final class LivePreviewActivityMain extends AppCompatActivity
 
   @Override
   public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-    Log.d(TAG, "Set facing");
-    if (cameraSource != null) {
-      if (isChecked) {
-        cameraSource.setFacing(CameraSource.CAMERA_FACING_FRONT);
-      } else {
-        cameraSource.setFacing(CameraSource.CAMERA_FACING_BACK);
-      }
+    int id = buttonView.getId();
+
+    switch (id) {
+      case R.id.facing_switch:
+        Log.d(TAG, "Set facing");
+        if (cameraSource != null) {
+          if (cameraFlip.isChecked()) {
+//            cameraFlip.setChecked(false);
+            cameraSource.setFacing(CameraSource.CAMERA_FACING_BACK);
+          } else {
+//            cameraFlip.setChecked(true);
+            cameraSource.setFacing(CameraSource.CAMERA_FACING_FRONT);
+          }
+        }
+        preview.stop();
+        startCameraSource();
+
+        //TODO: fix flash button crashing on front camera
+      case R.id.flash_button:
+        Log.d(TAG, "Set flash");
+        if (cameraSource != null && getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA_FLASH)) {
+          if (flashFlip.isChecked() && cameraSource.getCameraFacing() == CameraSource.CAMERA_FACING_BACK) {
+//            flashFlip.setChecked(false);
+            cameraSource.updateCameraFlash(Camera.Parameters.FLASH_MODE_TORCH);
+          } else {
+//            flashFlip.setChecked(true);
+            cameraSource.updateCameraFlash(Camera.Parameters.FLASH_MODE_OFF);
+          }
+
+        }
     }
-    preview.stop();
-    startCameraSource();
+
   }
 
   private void createCameraSource(String exercise) {
@@ -261,6 +291,29 @@ public final class LivePreviewActivityMain extends AppCompatActivity
     super.onDestroy();
     if (cameraSource != null) {
       cameraSource.release();
+    }
+  }
+
+  @Override
+  public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+    int id = item.getItemId();
+
+    switch (id) {
+      case R.id.page_smartrack:
+        Toast.makeText(getApplicationContext(), "already on SmarTrack page!", Toast.LENGTH_SHORT).show();
+        return true;
+
+      case R.id.page_play:
+        Toast.makeText(getApplicationContext(), "play pressed", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(getApplicationContext(), PlayActivity.class));
+        return true;
+
+      case R.id.page_vault:
+        Toast.makeText(getApplicationContext(), "vault pressed", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(getApplicationContext(), VaultActivity.class));
+        return true;
+      default:
+        return false;
     }
   }
 }

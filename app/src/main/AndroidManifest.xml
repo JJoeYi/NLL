@@ -4,7 +4,7 @@
     package="com.orbitalnll.nll"
     android:installLocation="auto">
 
-    <uses-sdk tools:overrideLibrary="           androidx.camera.camera2, androidx.camera.core,           androidx.camera.view, androidx.camera.lifecycle" />
+    <uses-sdk tools:overrideLibrary="androidx.camera.camera2, androidx.camera.core, androidx.camera.view, androidx.camera.lifecycle" />
 
     <uses-feature android:name="android.hardware.camera" />
 
@@ -34,6 +34,14 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".PlayActivity" >
+        </activity>
+
+        <activity
+            android:name=".VaultActivity" >
         </activity>
     </application>
 

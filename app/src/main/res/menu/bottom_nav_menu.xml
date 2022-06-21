@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/page_smartrack"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_camera_24"
+        android:title="SmarTrack"/>
+    <item
+        android:id="@+id/page_play"
+        android:enabled="true"
+        android:icon="@drawable/ic_temp_play_24"
+        android:title="Play!" />
+    <item
+        android:id="@+id/page_vault"
+        android:enabled="true"
+        android:icon="@drawable/ic_temp_vault_24"
+        android:title="Vault"/>
+</menu>

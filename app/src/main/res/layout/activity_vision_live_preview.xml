@@ -11,8 +11,8 @@
         android:id="@+id/preview_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/control">
+        app:layout_constraintTop_toTopOf="@+id/control"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_nav_layout">
 
     </com.orbitalnll.nll.camera.CameraSourcePreview>
 
@@ -25,20 +25,20 @@
         app:layout_constraintTop_toTopOf="@id/preview_view"
         app:layout_constraintBottom_toBottomOf="@id/preview_view"/>
 
+
     <include
-        android:id="@+id/settings_button"
-        layout="@layout/settings_style"
-        android:layout_width="wrap_content"
+        android:id="@+id/bottom_nav_layout"
+        layout="@layout/bottom_nav"
         android:layout_height="wrap_content"
-        app:layout_constraintRight_toRightOf="@id/preview_view"
-        app:layout_constraintTop_toTopOf="@id/preview_view" />
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
     <LinearLayout
         android:id="@id/control"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:background="#000"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/top_action_bar_scrim"
         android:orientation="horizontal">
 
         <ToggleButton
@@ -50,6 +50,15 @@
             android:checked="false"
             android:textOff=""
             android:textOn="" />
+
+        <ToggleButton
+            android:id="@+id/flash_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:textColor="@color/white"
+            android:background="@drawable/ic_flash_on_24"/>
 
         <Spinner
             android:id="@+id/spinner"

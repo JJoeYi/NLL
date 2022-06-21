@@ -76,7 +76,8 @@ public class CameraSource {
 
   private Camera camera;
 
-  private int facing = CAMERA_FACING_BACK;
+  private int facing = CAMERA_FACING_FRONT;
+  private String flashState = Camera.Parameters.FLASH_MODE_OFF;
 
   /** Rotation of the device, and thus the associated preview images captured from the device. */
   private int rotationDegrees;
@@ -306,6 +307,8 @@ public class CameraSource {
       }
     }
 
+    parameters.setFlashMode(flashState);
+
     camera.setParameters(parameters);
 
     // Four frame buffers are needed for working with the camera:
@@ -526,6 +529,18 @@ public class CameraSource {
     camera.setDisplayOrientation(displayAngle);
     parameters.setRotation(this.rotationDegrees);
   }
+
+
+  //TODO: add comments, fix camera flash crashing
+  public synchronized void updateCameraFlash(String flashmode) {
+    if (camera != null) {
+      this.flashState = flashmode;
+      Camera.Parameters newparam = camera.getParameters();
+      newparam.setFlashMode(flashState);
+      camera.setParameters(newparam);
+    }
+  }
+
 
   /**
    * Creates one buffer for the camera preview callback. The size of the buffer is based off of the
