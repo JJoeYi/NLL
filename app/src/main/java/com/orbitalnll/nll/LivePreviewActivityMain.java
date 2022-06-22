@@ -160,6 +160,13 @@ public final class LivePreviewActivityMain extends AppCompatActivity
       case R.id.facing_switch:
         Log.d(TAG, "Set facing");
         if (cameraSource != null) {
+
+          // turn off flash before flipping camera
+          if (flashFlip.isChecked()) {
+            cameraSource.updateCameraFlash(Camera.Parameters.FLASH_MODE_OFF);
+            flashFlip.setChecked(false);
+          }
+
           if (cameraFlip.isChecked()) {
 //            cameraFlip.setChecked(false);
             cameraSource.setFacing(CameraSource.CAMERA_FACING_BACK);
@@ -171,15 +178,20 @@ public final class LivePreviewActivityMain extends AppCompatActivity
         preview.stop();
         startCameraSource();
 
-        //TODO: fix flash button crashing on front camera
+
       case R.id.flash_button:
         Log.d(TAG, "Set flash");
         if (cameraSource != null && getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA_FLASH)) {
-          if (flashFlip.isChecked() && cameraSource.getCameraFacing() == CameraSource.CAMERA_FACING_BACK) {
-//            flashFlip.setChecked(false);
-            cameraSource.updateCameraFlash(Camera.Parameters.FLASH_MODE_TORCH);
+          if (flashFlip.isChecked()) {
+            if (cameraSource.getCameraFacing() == CameraSource.CAMERA_FACING_BACK) {
+              cameraSource.updateCameraFlash(Camera.Parameters.FLASH_MODE_TORCH);
+            }
+
+            if (cameraSource.getCameraFacing() == CameraSource.CAMERA_FACING_FRONT) {
+              Toast.makeText(this, "No flash allowed on front camera", Toast.LENGTH_SHORT).show();
+              flashFlip.setChecked(false);
+            }
           } else {
-//            flashFlip.setChecked(true);
             cameraSource.updateCameraFlash(Camera.Parameters.FLASH_MODE_OFF);
           }
 
