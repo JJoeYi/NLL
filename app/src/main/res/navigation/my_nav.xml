@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/vaultMainFragment">
+
+    <fragment
+        android:id="@+id/vaultMainFragment"
+        android:name="com.orbitalnll.nll.vaultMainFragment"
+        android:label="vaultMainFragment" >
+        <action
+            android:id="@+id/action_vaultMainFragment_to_pushUpFragment"
+            app:destination="@id/pushUpFragment"
+            app:launchSingleTop="false" />
+        <action
+            android:id="@+id/action_vaultMainFragment_to_sitUpFragment"
+            app:destination="@id/sitUpFragment" />
+        <action
+            android:id="@+id/action_vaultMainFragment_to_squatFragment"
+            app:destination="@id/squatFragment" />
+        <action
+            android:id="@+id/action_vaultMainFragment_to_cardioMiniFragment"
+            app:destination="@id/cardioMiniFragment" />
+        <action
+            android:id="@+id/action_vaultMainFragment_to_strengthMiniFragment"
+            app:destination="@id/strengthMiniFragment" />
+        <action
+            android:id="@+id/action_vaultMainFragment_to_accessoriesMiniFragment"
+            app:destination="@id/accessoriesMiniFragment" />
+        <action
+            android:id="@+id/action_vaultMainFragment_to_warmUpMiniFragment"
+            app:destination="@id/warmUpMiniFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pushUpFragment"
+        android:name="com.orbitalnll.nll.PushUpFragment"
+        android:label="PushUpFragment" >
+        <action
+            android:id="@+id/action_pushUpFragment_to_vaultMainFragment"
+            app:destination="@id/vaultMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sitUpFragment"
+        android:name="com.orbitalnll.nll.SitUpFragment"
+        android:label="SitUpFragment" >
+        <action
+            android:id="@+id/action_sitUpFragment_to_vaultMainFragment"
+            app:destination="@id/vaultMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/squatFragment"
+        android:name="com.orbitalnll.nll.SquatFragment"
+        android:label="SquatFragment" >
+        <action
+            android:id="@+id/action_squatFragment_to_vaultMainFragment"
+            app:destination="@id/vaultMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardioMiniFragment"
+        android:name="com.orbitalnll.nll.CardioMiniFragment"
+        android:label="CardioMiniFragment" >
+        <action
+            android:id="@+id/action_cardioMiniFragment_to_vaultMainFragment"
+            app:destination="@id/vaultMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/strengthMiniFragment"
+        android:name="com.orbitalnll.nll.StrengthMiniFragment"
+        android:label="StrengthMiniFragment" >
+        <action
+            android:id="@+id/action_strengthMiniFragment_to_vaultMainFragment"
+            app:destination="@id/vaultMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/warmUpMiniFragment"
+        android:name="com.orbitalnll.nll.WarmUpMiniFragment"
+        android:label="WarmUpMiniFragment" >
+        <action
+            android:id="@+id/action_warmUpMiniFragment_to_vaultMainFragment"
+            app:destination="@id/vaultMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accessoriesMiniFragment"
+        android:name="com.orbitalnll.nll.AccessoriesMiniFragment"
+        android:label="AccessoriesMiniFragment" >
+        <action
+            android:id="@+id/action_accessoriesMiniFragment_to_vaultMainFragment"
+            app:destination="@id/vaultMainFragment" />
+    </fragment>
+</navigation>

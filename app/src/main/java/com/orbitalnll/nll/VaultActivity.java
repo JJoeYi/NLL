@@ -8,6 +8,8 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.navigation.NavController;
+import androidx.navigation.fragment.NavHostFragment;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -20,31 +22,25 @@ public class VaultActivity extends AppCompatActivity
     //TODO: add logs
     private static final String TAG = "VaultActivity";
     private BottomNavigationView bNV;
+    NavController controller;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(TAG, "onCreate");
-
         setContentView(R.layout.activity_vault);
 
         // Bottom Navigation
         bNV = findViewById(R.id.bottom_nav_layout).findViewById(R.id.bottom_navigation);
         bNV.setSelectedItemId(R.id.page_vault);
         bNV.setOnItemSelectedListener(this);
+
+        NavHostFragment navHostFragment =
+                (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.fragmentContainerView);
+        controller = navHostFragment.getNavController();
     }
 
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-    }
 
     // For Bottom Navigation
     @Override
@@ -69,4 +65,10 @@ public class VaultActivity extends AppCompatActivity
                 return false;
         }
     }
+
+//    private void setCurrentFragment(Fragment f) {
+//        getSupportFragmentManager().beginTransaction().replace(R.id.vault_frame_layout, f).commit();
+//    }
+
+
 }

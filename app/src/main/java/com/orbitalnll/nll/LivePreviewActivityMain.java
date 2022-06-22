@@ -316,4 +316,5 @@ public final class LivePreviewActivityMain extends AppCompatActivity
         return false;
     }
   }
+
 }

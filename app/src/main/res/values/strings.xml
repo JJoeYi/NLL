@@ -4,6 +4,15 @@
     <string name="app_name">nll</string>
     <string name="menu_item_settings" translatable="false">Settings</string>
 
+    <string name ="sit_up_details">SIT UP DETAILS HERE SIT UP DETAILS HERE
+    SIT UP DETAILS HERE SIT UP DETAILS HERE SIT UP DETAILS HERE SIT UP DETAILS HERE SIT UP DETAILS HERE
+    </string>
+
+    <string name="squat_details">
+        SQUAT DETAILS HERE SQUAT DETAILS HERE SQUAT DETAILS HERE SQUAT DETAILS HERE SQUAT DETAILS HERE
+        SQUAT DETAILS HERE SQUAT DETAILS HERE SQUAT DETAILS HERE SQUAT DETAILS HERE SQUAT DETAILS HERE
+        SQUAT DETAILS HERE SQUAT DETAILS HERE SQUAT DETAILS HERE SQUAT DETAILS HERE SQUAT DETAILS HERE
+    </string>
 
     <string name="java_entry_title" translatable="false">Run the ML Kit quickstart written in Java</string>
     <string name="kotlin_entry_title" translatable="false">Run the ML Kit quickstart written in Kotlin</string>
