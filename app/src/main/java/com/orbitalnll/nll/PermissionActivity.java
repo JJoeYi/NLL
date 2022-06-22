@@ -35,7 +35,8 @@ public class PermissionActivity extends AppCompatActivity implements View.OnClic
 
         // Get permissions
         if (allRuntimePermissionsGranted()) {
-            startActivity(new Intent(getApplicationContext(), LivePreviewActivityMain.class));
+            startActivity(new Intent(getApplicationContext(), LivePreviewActivityMain.class)
+                    .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK));
         } else {
             getRuntimePermissions();
             Toast.makeText(this,
@@ -50,7 +51,8 @@ public class PermissionActivity extends AppCompatActivity implements View.OnClic
         super.onResume();
 
         if (allRuntimePermissionsGranted()) {
-            startActivity(new Intent(getApplicationContext(), LivePreviewActivityMain.class));
+            startActivity(new Intent(getApplicationContext(), LivePreviewActivityMain.class)
+                    .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK));
         }
     }
 
