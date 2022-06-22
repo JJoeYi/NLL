@@ -59,7 +59,8 @@ public class PlayActivity extends AppCompatActivity
         switch (id) {
             case R.id.page_smartrack:
                 Toast.makeText(getApplicationContext(), "smarTrack pressed", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(getApplicationContext(), LivePreviewActivityMain.class));
+                startActivity(new Intent(getApplicationContext(), LivePreviewActivityMain.class)
+                        .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK));
                 return true;
 
             case R.id.page_play:
@@ -68,7 +69,8 @@ public class PlayActivity extends AppCompatActivity
 
             case R.id.page_vault:
                 Toast.makeText(getApplicationContext(), "vault pressed", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(getApplicationContext(), VaultActivity.class));
+                startActivity(new Intent(getApplicationContext(), VaultActivity.class)
+                        .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK));
                 return true;
             default:
                 return false;
