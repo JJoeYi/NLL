@@ -8,4 +8,6 @@ public class PushUpFragment extends Fragment {
         super(R.layout.fragment_pushup);
     }
 
+
+
 }
