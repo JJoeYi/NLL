@@ -4,14 +4,87 @@
     <string name="app_name">nll</string>
     <string name="menu_item_settings" translatable="false">Settings</string>
 
-    <string name ="sit_up_details">SIT UP DETAILS HERE SIT UP DETAILS HERE
-    SIT UP DETAILS HERE SIT UP DETAILS HERE SIT UP DETAILS HERE SIT UP DETAILS HERE SIT UP DETAILS HERE
+    <string name="squat_details">
+        A squat is a strength exercise in which the trainee lowers their hips from a standing position and then stands back up.
+        During the descent of a squat, the hip and knee joints flex while the ankle joint dorsiflexes; conversely the hip and
+        knee joints extend and the ankle joint plantarflexes when standing up.
+
+Squats are considered a vital exercise for increasing the strength and size of the lower body muscles as well as developing
+        core strength. The primary agonist muscles used during the squat are the quadriceps femoris, the adductor magnus,
+        and the gluteus maximus.The squat also isometrically uses the erector spinae and the abdominal muscles, among others.
+
+The squat is one of the three lifts in the strength sport of powerlifting, together with the deadlift and the bench press.
+        It is also considered a staple exercise in many popular recreational exercise programs.
     </string>
 
-    <string name="squat_details">
-        SQUAT DETAILS HERE SQUAT DETAILS HERE SQUAT DETAILS HERE SQUAT DETAILS HERE SQUAT DETAILS HERE
-        SQUAT DETAILS HERE SQUAT DETAILS HERE SQUAT DETAILS HERE SQUAT DETAILS HERE SQUAT DETAILS HERE
-        SQUAT DETAILS HERE SQUAT DETAILS HERE SQUAT DETAILS HERE SQUAT DETAILS HERE SQUAT DETAILS HERE
+    <string name="pushup_details">
+        The push-up (sometimes called a press-up in British English) is a common calisthenics exercise beginning from the prone position.
+        By raising and lowering the body using the arms, push-ups exercise the pectoral muscles, triceps, and anterior deltoids, with
+        ancillary benefits to the rest of the deltoids, serratus anterior, coracobrachialis and the midsection as a whole.
+        Push-ups are a basic exercise used in civilian athletic training or physical education and commonly in military physical
+        training. They are also a common form of punishment used in the military, school sport, and some martial arts disciplines.
+
+    </string>
+
+    <string name="situp_details" >
+        The sit-up (or curl-up) is an abdominal endurance training exercise to strengthen, tighten and tone the abdominal
+        muscles. It is similar to a crunch (crunches target the rectus abdominis and also work the external and internal
+        obliques), but sit-ups have a fuller range of motion and condition additional muscles.
+    </string>
+
+    <string name="cardio_mini_details">
+    Aerobic exercise (also known as endurance activities, cardio or cardio-respiratory exercise) is physical exercise of
+        low to high intensity that depends primarily on the aerobic energy-generating process. "Aerobic" is defined as
+        "relating to, involving, or requiring oxygen", and refers to the use of oxygen to meet energy demands during exercise
+        via aerobic metabolism adequately. Aerobic exercise is performed by repeating sequences of light-to-moderate intensity
+        activities for extended periods of time. Aerobic exercise may be better referred to as "solely aerobic", as it is designed
+        to be low-intensity enough that all carbohydrates are aerobically turned into energy via mitochondrial ATP production.
+        Mitochondria are organelles that rely on oxygen for the metabolism of carbs, proteins, and fats.
+
+        Examples of cardiovascular or aerobic exercise are medium- to long-distance running or jogging, swimming, cycling, stair climbing and walking.
+    </string>
+
+    <string name="strength_mini_details" >
+    Strength training or resistance training involves the performance of physical exercises that are designed to improve strength
+        and endurance. It is often associated with the lifting of weights. It can also incorporate a variety of training techniques
+        such as calisthenics, isometrics, and plyometrics.
+
+    When properly performed, strength training can provide significant functional benefits and improvement in overall health and
+        well-being, including increased muscle, tendon, ligament and bone strength and toughness, improved joint function, reduced potential
+        for injury, increased bone density, increased metabolism, increased fitness and improved cardiac function. Training commonly uses the
+        technique of progressively increasing the force output of the muscle through incremental weight increases and uses a variety of exercises
+        and types of equipment to target specific muscle groups. Strength training is primarily an anaerobic activity, although some proponents have
+        adapted it to provide the benefits of aerobic exercise through circuit training.
+
+    Strength training typically produces lactate in the muscles, which is a limiting factor of exercise performance. Regular endurance exercise
+        leads to adaptations in skeletal muscle which can prevent lactate levels from rising during strength training.
+
+    For many sports and physical activities, strength training is central or is used as part of their training regimen.
+    </string>
+
+    <string name="accessories_mini_details" >
+Accessory exercises serve many purposes.
+
+For one, they allow you to continue to train after you finish your primary exercise or exercises—albeit at a lower intensity.
+        Just because you’re slightly fatigued doesn’t mean you shouldn’t continue training, and accessory exercises offer you the
+        chance to do that without the same risk of injury/overuse you’d be exposed to if you just performed primary exercises over and over.
+
+Accessory exercises also allow you to focus on different muscle groups—or hit certain muscle groups in different ways—than the primary exercises.
+        This ultimately reduces your weakness and imbalances and makes you a stronger and more resilient gym-goer. When used properly, not only will
+        accessory exercises make you stronger and more adept in a variety of movement patterns, but they’ll also help you get better and stronger at your primary exercises.
+
+Accessory exercises are typically performed for more reps than primary exercises
+    </string>
+
+    <string name="warmup_mini_details" >
+ Warming up is a part of stretching and preparation for physical exertion or a performance by exercising or practicing gently beforehand, usually undertaken
+        before a performance or practice. Athletes, singers, actors and others warm up before stressing their muscles. It is widely believed to prepare the muscles
+        for vigorous actions and to prevent muscle cramps and injury due to overexertion.
+
+A warm-up generally consists of a gradual increase in intensity in physical activity (a "pulse raiser"), joint mobility exercise, and stretching, followed by the activity.
+        For example, before running or playing an intensive sport, athletes might slowly jog to warm their muscles and increase their heart rate. It is important that warm-ups
+        be specific to the activity, so that the muscles to be used are activated. The risks and benefits of combining stretching with warming up are disputable, although it is
+        generally believed that warming up prepares the athlete both mentally and physically.
     </string>
 
     <string name="java_entry_title" translatable="false">Run the ML Kit quickstart written in Java</string>

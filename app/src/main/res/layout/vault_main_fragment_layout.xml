@@ -19,17 +19,19 @@
                 android:id="@+id/Vault_txt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/pt_serif"
                 android:text="VAULT"
                 android:textAlignment="center"
                 android:textSize="40dp" />
 
             <TextView
                 android:id="@+id/exTitle"
+                style="@style/TextAppearance.AppCompat.Headline"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
+
+                android:fontFamily="@font/alice"
                 android:text="Popular Exercises"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textSize="24sp"
                 android:textStyle="italic" />
 
@@ -69,7 +71,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="194dp"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/ic_temp_play_24" />
+                                android:src="@drawable/push_up_card_pic" />
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -79,12 +81,15 @@
 
                                 <!-- Title, secondary and supporting text -->
                                 <TextView
+                                    style="@style/TextAppearance.AppCompat.Headline"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:fontFamily="@font/pt_serif"
                                     android:text="Push Up"
                                     android:textAppearance="?attr/textAppearanceHeadline6" />
 
                                 <TextView
+                                    style="@style/TextAppearance.AppCompat.Caption"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="8dp"
@@ -130,11 +135,12 @@
                             android:orientation="vertical">
 
                             <!-- Image -->
+
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="194dp"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/ic_temp_vault_24" />
+                                android:src="@drawable/squat_card_pic" />
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -144,12 +150,15 @@
 
                                 <!-- Title, secondary and supporting text -->
                                 <TextView
+                                    style="@style/TextAppearance.AppCompat.Headline"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:fontFamily="@font/pt_serif"
                                     android:text="Squat"
                                     android:textAppearance="?attr/textAppearanceHeadline6" />
 
                                 <TextView
+                                    style="@style/TextAppearance.AppCompat.Caption"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="8dp"
@@ -198,7 +207,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="194dp"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/ic_flash_on_24" />
+                                android:src="@drawable/sit_up_card_pic" />
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -208,12 +217,15 @@
 
                                 <!-- Title, secondary and supporting text -->
                                 <TextView
+                                    style="@style/TextAppearance.AppCompat.Headline"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:fontFamily="@font/pt_serif"
                                     android:text="Sit Up"
                                     android:textAppearance="?attr/textAppearanceHeadline6" />
 
                                 <TextView
+                                    style="@style/TextAppearance.AppCompat.Caption"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="8dp"
@@ -245,7 +257,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
+                android:fontFamily="@font/pt_serif"
                 android:text="Workout Categories"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textSize="24sp"
@@ -266,7 +278,8 @@
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:clickable="true"
-                        android:focusable="true">
+                        android:focusable="true"
+                        app:cardCornerRadius="100dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -277,12 +290,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="100dp"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/ic_run_circle_24" />
+                                android:src="@drawable/cardio_pic" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="sans-serif-light"
+
                                 android:text="Cardio"
                                 android:textAlignment="center"
                                 android:textSize="16sp" />
@@ -294,7 +307,8 @@
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:clickable="true"
-                        android:focusable="true">
+                        android:focusable="true"
+                        app:cardCornerRadius="100dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -305,12 +319,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="100dp"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/ic_dumbbell_24" />
+                                android:src="@drawable/strength_pic" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="sans-serif-light"
+
                                 android:text="Strength"
                                 android:textAlignment="center"
                                 android:textSize="16sp" />
@@ -322,7 +336,8 @@
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:clickable="true"
-                        android:focusable="true">
+                        android:focusable="true"
+                        app:cardCornerRadius="100dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -333,15 +348,16 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="100dp"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/ic_elderly_24" />
+                                android:src="@drawable/acc_pic" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="sans-serif-light"
+
                                 android:text="Accessories"
                                 android:textAlignment="center"
                                 android:textSize="16sp" />
+
                         </LinearLayout>
                     </com.google.android.material.card.MaterialCardView>
 
@@ -350,7 +366,8 @@
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:clickable="true"
-                        android:focusable="true">
+                        android:focusable="true"
+                        app:cardCornerRadius="100dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -361,12 +378,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="100dp"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/ic_coffee_24" />
+                                android:src="@drawable/warmup_pic" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="sans-serif-light"
+
                                 android:text="Warm Up"
                                 android:textAlignment="center"
                                 android:textSize="16sp" />
@@ -378,7 +395,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
+                android:fontFamily="@font/pt_serif"
                 android:text="Motivation"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textSize="24sp"
@@ -387,39 +404,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
+
                 android:paddingBottom="20dp"
                 android:text="Light weight baby!!"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="monospace"
-                android:text="scroll test"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                android:textSize="34sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="monospace"
-                android:text="scroll test"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                android:textSize="34sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="monospace"
-                android:text="scroll test"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                android:textSize="34sp"
-                android:textStyle="italic" />
-
         </LinearLayout>
     </ScrollView>
 
