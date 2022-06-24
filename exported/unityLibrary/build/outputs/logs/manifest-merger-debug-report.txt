@@ -1,0 +1,121 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:2:1-55:12
+	package
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:4:5-33
+		INJECTED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:3:5-51
+	xmlns:android
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:6:5-40:19
+	android:extractNativeLibs
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:7:9-41
+	android:isGame
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:8:9-30
+activity#com.unity3d.player.UnityPlayerActivity
+ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:9:9-23:20
+	android:screenOrientation
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:15:13-49
+	android:launchMode
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:13:13-44
+	android:hardwareAccelerated
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:12:13-48
+	android:resizeableActivity
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:14:13-47
+	android:configChanges
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:11:13-194
+	android:theme
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:16:13-54
+	android:name
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:10:13-66
+meta-data#unityplayer.UnityActivity
+ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:17:13-19:40
+	android:value
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:19:17-37
+	android:name
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:18:17-57
+meta-data#android.notch_support
+ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:20:13-22:40
+	android:value
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:22:17-37
+	android:name
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:21:17-53
+meta-data#unity.splash-mode
+ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:25:9-27:33
+	android:value
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:27:13-30
+	android:name
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:26:13-45
+meta-data#unity.splash-enable
+ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:28:9-30:36
+	android:value
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:30:13-33
+	android:name
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:29:13-47
+meta-data#unity.launch-fullscreen
+ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:31:9-33:36
+	android:value
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:33:13-33
+	android:name
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:32:13-51
+meta-data#unity.allow-resizable-window
+ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:34:9-36:37
+	android:value
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:36:13-34
+	android:name
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:35:13-56
+meta-data#notch.config
+ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:37:9-39:50
+	android:value
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:39:13-47
+	android:name
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:38:13-40
+uses-feature#0x00020000
+ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:41:5-54
+	android:glEsVersion
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:41:19-51
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:43:5-67
+	android:name
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:43:22-64
+uses-permission#android.permission.VIBRATE
+ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:44:5-66
+	android:name
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:44:22-63
+uses-feature#android.hardware.touchscreen
+ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:46:5-48:36
+	android:required
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:48:9-33
+	android:name
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:47:9-52
+uses-feature#android.hardware.touchscreen.multitouch
+ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:49:5-51:36
+	android:required
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:51:9-33
+	android:name
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:50:9-63
+uses-feature#android.hardware.touchscreen.multitouch.distinct
+ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:52:5-54:36
+	android:required
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:54:9-33
+	android:name
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:53:9-72
+uses-sdk
+INJECTED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml
+INJECTED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml
+INJECTED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml
+INJECTED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml
+		ADDED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml

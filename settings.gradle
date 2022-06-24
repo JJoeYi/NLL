@@ -16,4 +16,4 @@ rootProject.name = "nll"
 include ':app'
 
 include ':unityLibrary'
-project(':unityLibrary').projectDir=new File('..\\exported\\unityLibrary')
+project(':unityLibrary').projectDir=new File('\\exported\\unityLibrary')

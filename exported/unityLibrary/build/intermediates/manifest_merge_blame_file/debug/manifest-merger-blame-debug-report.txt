@@ -1,0 +1,110 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="com.unity3d.player" >
+5
+6    <uses-sdk
+7        android:minSdkVersion="22"
+7-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml
+8        android:targetSdkVersion="30" />
+8-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml
+9
+10    <uses-feature android:glEsVersion="0x00020000" />
+10-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:41:5-54
+10-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:41:19-51
+11
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:43:5-67
+12-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:43:22-64
+13    <uses-permission android:name="android.permission.VIBRATE" />
+13-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:44:5-66
+13-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:44:22-63
+14
+15    <uses-feature
+15-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:46:5-48:36
+16        android:name="android.hardware.touchscreen"
+16-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:47:9-52
+17        android:required="false" />
+17-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:48:9-33
+18    <uses-feature
+18-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:49:5-51:36
+19        android:name="android.hardware.touchscreen.multitouch"
+19-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:50:9-63
+20        android:required="false" />
+20-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:51:9-33
+21    <uses-feature
+21-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:52:5-54:36
+22        android:name="android.hardware.touchscreen.multitouch.distinct"
+22-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:53:9-72
+23        android:required="false" />
+23-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:54:9-33
+24
+25    <application
+25-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:6:5-40:19
+26        android:extractNativeLibs="true"
+26-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:7:9-41
+27        android:isGame="true" >
+27-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:8:9-30
+28        <activity
+28-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:9:9-23:20
+29            android:name="com.unity3d.player.UnityPlayerActivity"
+29-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:10:13-66
+30            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+30-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:11:13-194
+31            android:hardwareAccelerated="false"
+31-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:12:13-48
+32            android:launchMode="singleTask"
+32-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:13:13-44
+33            android:resizeableActivity="false"
+33-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:14:13-47
+34            android:screenOrientation="portrait"
+34-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:15:13-49
+35            android:theme="@style/UnityThemeSelector" >
+35-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:16:13-54
+36            <meta-data
+36-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:17:13-19:40
+37                android:name="unityplayer.UnityActivity"
+37-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:18:17-57
+38                android:value="true" />
+38-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:19:17-37
+39            <meta-data
+39-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:20:13-22:40
+40                android:name="android.notch_support"
+40-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:21:17-53
+41                android:value="true" />
+41-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:22:17-37
+42        </activity>
+43
+44        <meta-data
+44-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:25:9-27:33
+45            android:name="unity.splash-mode"
+45-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:26:13-45
+46            android:value="0" />
+46-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:27:13-30
+47        <meta-data
+47-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:28:9-30:36
+48            android:name="unity.splash-enable"
+48-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:29:13-47
+49            android:value="True" />
+49-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:30:13-33
+50        <meta-data
+50-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:31:9-33:36
+51            android:name="unity.launch-fullscreen"
+51-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:32:13-51
+52            android:value="True" />
+52-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:33:13-33
+53        <meta-data
+53-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:34:9-36:37
+54            android:name="unity.allow-resizable-window"
+54-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:35:13-56
+55            android:value="False" />
+55-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:36:13-34
+56        <meta-data
+56-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:37:9-39:50
+57            android:name="notch.config"
+57-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:38:13-40
+58            android:value="portrait|landscape" />
+58-->C:\Users\JY\AndroidStudioProjects\nll\exported\unityLibrary\src\main\AndroidManifest.xml:39:13-47
+59    </application>
+60
+61</manifest>
