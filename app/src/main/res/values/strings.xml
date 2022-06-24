@@ -2,6 +2,7 @@
 
 <resources>
     <string name="app_name">nll</string>
+    <string name="game_view_content_description">Game View</string>
     <string name="menu_item_settings" translatable="false">Settings</string>
 
     <string name="squat_details">
