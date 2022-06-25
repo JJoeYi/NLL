@@ -1,0 +1,788 @@
+{ "pid": "BeeDriver", "ph":"M", "name": "process_name", "args": {"name": "BeeDriver"} },
+{ "pid": "BeeDriver", "ph":"M", "name": "process_sort_index", "args": {"sort_index": -2} },
+{ "pid": "BeeDriver", "tid": 1, "ph":"M", "name": "thread_name", "args": {"name": "Main thread"} },
+{ "pid": "BeeDriver", "tid": 1,"ts": 629586047917.2,"dur": 0, "ph":"X", "name": "Build FinalProgram"},
+{ "pid": "BeeDriver", "tid": 1,"ts": 629586048170.6,"dur": 8078.2, "ph":"X", "name": "WriteBuildProgramData"},
+{ "pid": "BeeDriver", "tid": 1,"ts": 629586056377.1,"dur": 563129.9, "ph":"X", "name": "Run Backend"},
+{ "cat":"", "pid":"bee_backend", "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":"bee_backend", "tid":0, "ts":629586211888, "dur":22112, "ph":"X", "name": "DriverCheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":0, "ts":629586234001, "dur":1005, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":0, "ts":629586235066, "dur":4132, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":"bee_backend", "tid":0, "ts":629586239243, "dur":25, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":"bee_backend", "tid":0, "ts":629586239269, "dur":494, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":"bee_backend", "tid":0, "ts":629586599816, "dur":225, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":0, "ts":629586600087, "dur":6, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":0, "ts":629586600109, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":0, "ts":629586600128, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":0, "ts":629586600139, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":0, "ts":629586600149, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":0, "ts":629586600164, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":0, "ts":629586600177, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":0, "ts":629586600183, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":0, "ts":629586600190, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":0, "ts":629586600197, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":0, "ts":629586600205, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":0, "ts":629586600212, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":0, "ts":629586600220, "dur":6970, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586239389, "dur":1306, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586240701, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText d8kz/_dummy_for_header_discovery" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586240716, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586240802, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/bi2o_metadata0.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586240820, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586240868, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/qo7k_System2.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586240869, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586240921, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/tptc_System.Net0.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586240922, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586240967, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/8rhz_os1.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586240968, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586241063, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/swv0_Posix1.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586241066, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586241152, "dur":5107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/xdh4_osix1.lump.o" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586246259, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586246301, "dur":771, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/wgnr_roid0.lump.o" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586247072, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586247126, "dur":662, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/r407_stem0.lump.o" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586247788, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586247839, "dur":673, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/0n6x_.Net0.lump.o" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586248512, "dur":107, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586248620, "dur":1262, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/5w10_stem1.lump.o" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586249882, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586249954, "dur":8244, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 dqdh/kdkh_gc.o" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586258199, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586258294, "dur":484, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/6mld_s_fragment.o" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586258779, "dur":126, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586258906, "dur":216, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/m8hh_getifaddrs.o" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586259122, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586259228, "dur":131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/dau5_le_CodeGen.o" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586259359, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586259478, "dur":106, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/437k_le_CodeGen.o" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586259584, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586259699, "dur":114, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/snxn_ml_CodeGen.o" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586259813, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586259932, "dur":109, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/ypsg_ethodTable.o" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586260041, "dur":119, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586260161, "dur":615, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/ftt0_e.UIModule.o" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586260776, "dur":108, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586260884, "dur":242, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/nf4r_Evidence.o" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586261127, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586261215, "dur":616, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/8bex_ntsModule4.o" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586261832, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586261947, "dur":662, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/enqr_Engine.UI3.o" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586262610, "dur":135, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586262746, "dur":250, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 zz99/ycd1_inflate.o" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586262996, "dur":82, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586263079, "dur":372, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/mkh9_ineModule2.o" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586263451, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586263484, "dur":129, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Link_Android_arm64 d8kz/libil2cpp.so" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586263613, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586263663, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/JY/AndroidStudioProjects/nll/unityLibrary/build/il2cpp_arm64-v8a_Release/il2cpp_cache/buildstate/artifacts/objcopy_gqhv/libil2cpp.dbg.so" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586263665, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586263701, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"NdkObjCopy C:/Users/JY/AndroidStudioProjects/nll/unityLibrary/build/il2cpp_arm64-v8a_Release/il2cpp_cache/buildstate/artifacts/objcopy_gqhv/libil2cpp.sym.so" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586263703, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586263782, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/JY/AndroidStudioProjects/nll/unityLibrary/src/main/jniLibs/arm64-v8a/libil2cpp.sym.so" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586263784, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586264390, "dur":60318, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/JY/AndroidStudioProjects/nll/unityLibrary/src/main/jniLibs/arm64-v8a/libil2cpp.sym.so" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586324711, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/JY/AndroidStudioProjects/nll/unityLibrary/src/main/jniLibs/arm64-v8a/libil2cpp.dbg.so" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586324713, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586324753, "dur":275003, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/JY/AndroidStudioProjects/nll/unityLibrary/src/main/jniLibs/arm64-v8a/libil2cpp.dbg.so" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586599759, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/JY/AndroidStudioProjects/nll/unityLibrary/src/main/jniLibs/arm64-v8a/libil2cpp.so" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586599762, "dur":26, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586599788, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"FinalProgram" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586599789, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":629586599791, "dur":34, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586239414, "dur":1285, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586240702, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/jeul_vm6.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586240721, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586240812, "dur":4, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/7h6p_libil2cpp0.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586240816, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586240915, "dur":5, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/9lyh_utils1.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586240920, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586240972, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/pcge_c-api0.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586240973, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586241057, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/auh4_Lumin0.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586241058, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586241141, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/ksi8_Win324.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586241142, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586241197, "dur":5137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/vdml_in324.lump.o" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586246334, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586246399, "dur":594, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/y118_-api0.lump.o" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586246994, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586247051, "dur":1471, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/4ioi_time0.lump.o" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586248522, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586248575, "dur":1649, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/5c48_2cpp0.lump.o" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586250225, "dur":226, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586250452, "dur":650, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/kyfp_l_vm6.lump.o" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586251102, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586251194, "dur":552, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/nzfp_hapeModule.o" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586251746, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586251841, "dur":852, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/thxk_oreModule1.o" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586252693, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586252793, "dur":993, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/3nkv_figuration.o" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586253787, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586253893, "dur":644, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/1fpq_mscorlib11.o" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586254537, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586254652, "dur":448, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/c9nv_aluesTable.o" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586255100, "dur":278, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586255379, "dur":609, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/dvih_Generics3.o" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586255988, "dur":132, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586256121, "dur":1048, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/sfft_Generics2.o" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586257169, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586257279, "dur":574, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/0e7a_icMethods5.o" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586257853, "dur":103, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586257956, "dur":247, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/x5m5_utf8_util.o" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586258204, "dur":124, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586258329, "dur":872, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/o7ck_bit_stream.o" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586259201, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586259298, "dur":107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/axnk_le_CodeGen.o" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586259406, "dur":128, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586259534, "dur":104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/657p_le_CodeGen.o" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586259638, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586259737, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/kor1_re_CodeGen.o" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586259829, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586259947, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/vy4l_interTable.o" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586260050, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586260148, "dur":581, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/kn9u_ticsModule.o" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586260729, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586260810, "dur":501, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/0u8d_ntsModule8.o" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586261311, "dur":177, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586261489, "dur":502, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/iinp_tsModule11.o" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586261992, "dur":914, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586262907, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 zz99/rvtu_gzwrite.o" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586262973, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586263050, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 zz99/2s8i_deflate.o" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586263142, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":629586263219, "dur":336603, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586239448, "dur":1248, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586240701, "dur":117, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/6cqa_System0.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586240818, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586240885, "dur":5, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/qo7k_System3.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586240890, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586240947, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/ahlf_System0.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586240948, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586241008, "dur":5, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/3xnj_tests0.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586241013, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586241067, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/swv0_Posix3.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586241068, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586241154, "dur":5352, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/j8ix_osix3.lump.o" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586246506, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586246591, "dur":1371, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/24v9_data2.lump.o" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586247962, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586248049, "dur":684, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/oe8k_stem0.lump.o" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586248733, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586248779, "dur":1311, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/8fcj_stem2.lump.o" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586250090, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586250186, "dur":1866, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/vk3d_l_vm3.lump.o" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586252053, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586252094, "dur":517, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/yv22_CoreModule.o" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586252612, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586252691, "dur":573, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/3993_System.o" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586253264, "dur":346, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586253611, "dur":1388, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/u63n_mscorlib16.o" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586254999, "dur":183, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586255183, "dur":839, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/6lxe_Generics8.o" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586256022, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586256122, "dur":1010, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/cppn_Generics19.o" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586257132, "dur":258, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586257391, "dur":536, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/uj0y_icMethods3.o" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586257927, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586258028, "dur":665, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/dvyj_histogram.o" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586258693, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586258812, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/qc76_huffman.o" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586258914, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586258994, "dur":345, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/0zpz_nterlocked.o" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586259339, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586259436, "dur":94, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/6af9_le_CodeGen.o" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586259530, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586259630, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/1tj2_le_CodeGen.o" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586259729, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586259825, "dur":104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/d5lw_ty_CodeGen.o" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586259929, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586260024, "dur":486, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/1nln__Generated.o" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586260510, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586260612, "dur":637, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/12su_ntsModule9.o" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586261249, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586261328, "dur":588, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/cvjx_Generics11.o" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586261916, "dur":127, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586262043, "dur":1183, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/9j9b_UnityTls.o" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586263226, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":3, "ts":629586263305, "dur":336516, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586239492, "dur":1213, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586240705, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/jeul_vm1.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586240721, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586240836, "dur":4, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/axfe_Mono0.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586240840, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586240892, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/k579_System0.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586240894, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586240952, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/xo91_em.Runtime0.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586240953, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586241019, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/3xnj_tests1.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586241020, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586241069, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/swv0_Posix4.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586241070, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586241166, "dur":5168, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/mrtf_osix4.lump.o" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586246334, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586246392, "dur":1394, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/nfek_-api3.lump.o" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586247787, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586247839, "dur":795, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/5fbw_ting0.lump.o" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586248634, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586248692, "dur":1981, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/qpta_z_gc0.lump.o" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586250674, "dur":130, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586250805, "dur":696, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/816c_bly-CSharp.o" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586251501, "dur":119, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586251621, "dur":527, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/p2fq_GUIModule1.o" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586252148, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586252232, "dur":567, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/r8ve_tionModule.o" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586252799, "dur":234, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586253033, "dur":608, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/916b_mscorlib4.o" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586253642, "dur":108, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586253750, "dur":613, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/n3cv_mscorlib13.o" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586254364, "dur":107, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586254472, "dur":526, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/mgyu_gistration.o" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586254998, "dur":107, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586255106, "dur":606, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/vuzo_ieldValues.o" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586255712, "dur":128, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586255841, "dur":595, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/6sr1_Generics24.o" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586256436, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586256536, "dur":560, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/k6u6_Generics15.o" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586257096, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586257195, "dur":540, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/8bhe_Generics.o" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586257735, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586257833, "dur":460, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/f6iw_ricMethods.o" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586258293, "dur":144, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586258438, "dur":505, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/9ri3_references.o" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586258943, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586259046, "dur":116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/xn51_ne_CodeGen.o" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586259162, "dur":195, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586259358, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/noat_le_CodeGen.o" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586259459, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586259564, "dur":100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/67vs_ThreadImpl.o" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586259664, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586259773, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/9idi_ib_CodeGen.o" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586259876, "dur":123, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586260000, "dur":111, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/3rik_efinitions.o" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586260111, "dur":116, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586260227, "dur":401, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/n99q_oryMapImpl.o" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586260628, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586260710, "dur":121, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/2dk1_derFactory.o" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586260831, "dur":139, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586260971, "dur":132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/dqob_RealProxy.o" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586261103, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586261201, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/o8qk_ngServices.o" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586261312, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586261400, "dur":558, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/73tg_ntsModule3.o" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586261958, "dur":151, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586262110, "dur":125, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/wlfr_ersistence.o" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586262235, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586262329, "dur":538, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/h1rm_emapModule.o" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586262867, "dur":307, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":629586263174, "dur":336641, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586239525, "dur":1183, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586240708, "dur":138, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/9lyh_utils2.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586240847, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586240923, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/7nxe_e.Remoting0.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586240924, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586240969, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/guy7_Android0.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586240970, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586241065, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/swv0_Posix2.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586241067, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586241158, "dur":4918, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/0wrm_osix2.lump.o" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586246076, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586246124, "dur":1807, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/ypzo_ests1.lump.o" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586247931, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586247973, "dur":1212, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/qoyh_stem0.lump.o" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586249185, "dur":219, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586249405, "dur":1348, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/rggi_tils0.lump.o" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586250753, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586250795, "dur":1886, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/y3dw_l_vm4.lump.o" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586252681, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586252724, "dur":534, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/85fe_ystem.Core.o" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586253258, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586253365, "dur":539, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/fm7b_mscorlib17.o" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586253905, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586253998, "dur":573, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/lv3r_mscorlib.o" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586254571, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586254660, "dur":496, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/23yz_aluesTable.o" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586255156, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586255257, "dur":533, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/ky99_Generics6.o" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586255791, "dur":285, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586256077, "dur":1003, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/yhgs_Generics20.o" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586257081, "dur":144, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586257226, "dur":627, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/m2uf_icMethods7.o" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586257853, "dur":168, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586258022, "dur":269, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/i54f_teral_cost.o" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586258291, "dur":119, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586258411, "dur":1101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/0188_bit_cost.o" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586259512, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586259599, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/qyck_le_CodeGen.o" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586259701, "dur":126, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586259828, "dur":409, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/8ude_efinitions.o" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586260237, "dur":1008, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586261245, "dur":964, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/efiq_imeImports.o" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586262209, "dur":119, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586262328, "dur":476, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/875l_i-debugger.o" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586262804, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586262878, "dur":138, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 zz99/jkhn_infback.o" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586263016, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586263095, "dur":609, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586263704, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"NdkObjCopy C:/Users/JY/AndroidStudioProjects/nll/unityLibrary/build/il2cpp_arm64-v8a_Release/il2cpp_cache/buildstate/artifacts/objcopy_gqhv/stripped/libil2cpp.so" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586263755, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586263834, "dur":4, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"NdkObjCopy C:/Users/JY/AndroidStudioProjects/nll/unityLibrary/build/il2cpp_arm64-v8a_Release/il2cpp_cache/buildstate/artifacts/objcopy_gqhv/libil2cpp.so" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586263838, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":5, "ts":629586263873, "dur":335955, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586239554, "dur":1140, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586240701, "dur":114, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/rana_System2.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586240815, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586240914, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/rana_System1.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586240916, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586240965, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/8rhz_os0.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586240966, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586241052, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/cxsd_Generic1.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586241053, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586241109, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/ksi8_Win321.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586241110, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586241210, "dur":2100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/6z99_in321.lump.o" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586243311, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586243356, "dur":2944, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/uu6l_osix0.lump.o" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586246300, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586246342, "dur":790, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/hdtj_-api1.lump.o" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586247132, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586247183, "dur":463, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/u9vh_stem0.lump.o" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586247647, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586247698, "dur":919, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/7340_tils1.lump.o" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586248618, "dur":127, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586248745, "dur":784, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/anfj_tils2.lump.o" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586249529, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586249594, "dur":350, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/vosg_stem0.lump.o" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586249944, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586250030, "dur":1628, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/66q2_l_vm0.lump.o" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586251658, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586251720, "dur":522, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/tyfa_GridModule.o" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586252242, "dur":172, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586252415, "dur":514, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/08gp_System1.o" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586252929, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586253005, "dur":519, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/vpug_mscorlib6.o" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586253524, "dur":1643, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586255168, "dur":589, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/r102_Generics9.o" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586255757, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586255867, "dur":600, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/5k7k_Generics23.o" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586256468, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586256544, "dur":570, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/jyaq_Generics14.o" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586257115, "dur":1134, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586258250, "dur":560, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/jblo_t_two_pass.o" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586258810, "dur":220, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586259031, "dur":100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/ded0_ed_CodeGen.o" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586259131, "dur":146, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586259277, "dur":147, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/ekqb_le_CodeGen.o" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586259424, "dur":1445, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586260869, "dur":635, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/uz11_ntsModule6.o" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586261505, "dur":187, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586261692, "dur":922, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/x2j1_tsModule10.o" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586262614, "dur":124, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586262738, "dur":127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 zz99/3sn4_inftrees.o" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586262865, "dur":284, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":6, "ts":629586263150, "dur":336663, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586239610, "dur":1088, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586240701, "dur":120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/voau_vm-utils0.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586240821, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586240894, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/5lf4_System0.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586240896, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586240957, "dur":0, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/bi2o_metadata2.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586240958, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586241027, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/3xnj_tests3.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586241028, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586241135, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/ksi8_Win323.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586241137, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586241202, "dur":5168, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/sub3_in323.lump.o" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586246370, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586246420, "dur":1075, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/xp8m_z_os0.lump.o" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586247496, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586247567, "dur":1538, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/9tiu_stem0.lump.o" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586249105, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586249164, "dur":660, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/mlaq_stem0.lump.o" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586249825, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586249868, "dur":545, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 zz99/w0gm_adler32.o" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586250413, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586250472, "dur":1021, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/s1sv_l_vm2.lump.o" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586251493, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586251569, "dur":592, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/gkbr_cs2DModule.o" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586252162, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586252255, "dur":583, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/lodv_dJNIModule.o" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586252839, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586252958, "dur":627, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/1k1s_mscorlib8.o" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586253585, "dur":130, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586253716, "dur":560, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/tyj7_mscorlib15.o" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586254276, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586254382, "dur":547, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/4zgp_vokerTable.o" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586254930, "dur":263, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586255194, "dur":571, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/5ddy_Generics7.o" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586255766, "dur":201, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586255968, "dur":575, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/zp08_Generics21.o" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586256543, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586256654, "dur":1135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/yi71_Generics13.o" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586257789, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586257894, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteResponseFile C:/Users/JY/AndroidStudioProjects/nll/unityLibrary/build/il2cpp_arm64-v8a_Release/il2cpp_cache/buildstate/artifacts/rsp/1729919944154292146.rsp" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586257906, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586257997, "dur":562, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/yeer_memory.o" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586258559, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586258651, "dur":315, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/eo7a_state.o" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586258967, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586259052, "dur":119, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/jy9t_le_CodeGen.o" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586259172, "dur":136, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586259309, "dur":116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/wcjb_le_CodeGen.o" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586259426, "dur":113, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586259539, "dur":114, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/a271_le_CodeGen.o" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586259653, "dur":116, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586259770, "dur":104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/n063_on_CodeGen.o" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586259874, "dur":127, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586260002, "dur":125, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/kgz6_rp_CodeGen.o" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586260127, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586260245, "dur":185, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/c2dh_Semaphore.o" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586260431, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586260523, "dur":269, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/3izt_temWatcher.o" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586260792, "dur":658, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586261451, "dur":513, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/jq75_tsModule12.o" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586261964, "dur":155, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586262119, "dur":564, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/8rjf_Engine.UI1.o" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586262683, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586262727, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 zz99/kfz8_trees.o" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586262858, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586262929, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 zz99/8scm_gzread.o" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586263001, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586263079, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 dqdh/5g86_al_handler.o" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586263152, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":7, "ts":629586263237, "dur":336582, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586239644, "dur":1056, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586240702, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/jeul_vm5.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586240722, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586240818, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText 87li/_dummy_for_header_discovery" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586240819, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586240943, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/00va_System0.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586240945, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586241002, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/pcge_c-api1.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586241003, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586241061, "dur":5, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/swv0_Posix0.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586241066, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586241151, "dur":0, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/9lyh_utils0.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586241151, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586241200, "dur":2115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/osdq_tils0.lump.o" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586243315, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586243366, "dur":204, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/a95i__OSX0.lump.o" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586243570, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586243606, "dur":648, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/yfma_umin0.lump.o" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586244255, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586244287, "dur":2096, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/ctpx_eric2.lump.o" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586246383, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586246438, "dur":3157, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/6krb_Pool0.lump.o" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586249596, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586249641, "dur":1065, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/gaug_data0.lump.o" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586250707, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586250822, "dur":694, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/ssjw_gineModule.o" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586251516, "dur":294, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586251811, "dur":547, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/1h82_nityEngine.o" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586252358, "dur":227, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586252586, "dur":555, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/82ae_System.Xml.o" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586253141, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586253234, "dur":539, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/nej7_mscorlib2.o" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586253773, "dur":122, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586253896, "dur":1025, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/0749_mscorlib10.o" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586254921, "dur":845, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586255767, "dur":566, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/r8up_Generics25.o" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586256334, "dur":112, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586256447, "dur":627, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/5lyu_Generics16.o" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586257074, "dur":913, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586257987, "dur":794, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/ly5f_metablock.o" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586258781, "dur":115, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586258896, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/86ya_dictionary.o" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586258957, "dur":323, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586259281, "dur":128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/tbrw_le_CodeGen.o" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586259409, "dur":149, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586259559, "dur":108, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/9j63_le_CodeGen.o" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586259667, "dur":194, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586259862, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/g3uc_RgctxTable.o" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586259950, "dur":175, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586260126, "dur":180, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/jiyw_osixHelper.o" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586260306, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586260396, "dur":592, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/6hna_Dns.o" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586260988, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586261093, "dur":769, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/trhl_ntsModule5.o" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586261862, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586261969, "dur":608, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/t7m3_Engine.UI2.o" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586262578, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586262617, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 zz99/l8zj_uncompr.o" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586262674, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586262748, "dur":183, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 zz99/sbkp_inffast.o" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586262931, "dur":143, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586263075, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 zz99/lorl_compress.o" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586263135, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":8, "ts":629586263212, "dur":336605, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586239665, "dur":1036, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586240704, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/jeul_vm4.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586240712, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586240804, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText dqdh/_dummy_for_header_discovery" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586240805, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586240839, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/qo7k_System0.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586240842, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586240907, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/rana_System0.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586240908, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586240959, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/2zno_ThreadPool0.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586240960, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586241029, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/pyqq_LibraryPAL0.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586241030, "dur":115, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586241147, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/3sg4_WinRT0.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586241148, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586241206, "dur":2178, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/c148_inRT0.lump.o" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586243384, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586243422, "dur":593, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/47pk_yPAL0.lump.o" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586244016, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586244046, "dur":362, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/4rkp_ests3.lump.o" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586244408, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586244462, "dur":1759, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/99ef_eric1.lump.o" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586246222, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586246271, "dur":1705, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/v6o6_ests0.lump.o" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586247976, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586248039, "dur":1306, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/34hk_stem0.lump.o" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586249345, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586249397, "dur":1372, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/wwe3_egen0.lump.o" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586250769, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586250811, "dur":662, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/2xpk_gineModule.o" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586251473, "dur":122, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586251596, "dur":585, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/mpo8_gacyModule.o" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586252182, "dur":168, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586252351, "dur":610, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/lokd_System2.o" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586252962, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586253048, "dur":806, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/om3n_mscorlib3.o" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586253854, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586253948, "dur":571, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/2yfj_mscorlib1.o" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586254520, "dur":142, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586254662, "dur":528, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/f0n4_TypeValues.o" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586255191, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586255294, "dur":559, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/yam5_Generics4.o" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586255853, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586255952, "dur":549, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/k53w_Generics22.o" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586256501, "dur":168, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586256669, "dur":528, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/d33d_Generics12.o" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586257197, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586257294, "dur":566, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/fz3m_icMethods4.o" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586257860, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586257958, "dur":377, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/gvfc_tatic_dict.o" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586258336, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586258437, "dur":553, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/t0fy_erences_hq.o" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586258990, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586259075, "dur":96, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/0k74_le_CodeGen.o" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586259172, "dur":213, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586259386, "dur":116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/88ku_le_CodeGen.o" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586259502, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586259621, "dur":127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/fg15_le_CodeGen.o" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586259749, "dur":129, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586259878, "dur":114, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/0nmt_adataUsage.o" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586259992, "dur":133, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586260127, "dur":583, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/fuk7_uestModule.o" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586260711, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586260809, "dur":225, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/zfe8_iveMethods.o" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586261034, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586261129, "dur":1001, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/yiau_Context.o" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586262130, "dur":125, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586262256, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/jaa9_Interop.o" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586262344, "dur":127, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586262471, "dur":531, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/ns1p_ineModule3.o" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586263002, "dur":123, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":9, "ts":629586263126, "dur":336694, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586239730, "dur":976, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586240706, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/jeul_vm0.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586240722, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586240831, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/sdpz_gc0.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586240832, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586240939, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/wuza_m.Security0.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586240940, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586241004, "dur":5, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/pcge_c-api2.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586241009, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586241055, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/cxsd_Generic2.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586241056, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586241133, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/ksi8_Win322.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586241135, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586241193, "dur":5152, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/pb1k_in322.lump.o" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586246345, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586246406, "dur":1485, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/kw31_-api2.lump.o" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586247891, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586247943, "dur":1538, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/9zps_stem1.lump.o" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586249481, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586249533, "dur":1829, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/a4c5_Mono0.lump.o" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586251362, "dur":111, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586251474, "dur":589, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/miax_sicsModule.o" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586252064, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586252175, "dur":556, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/1uxr_udioModule.o" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586252731, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586252837, "dur":790, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/2sl9_mscorlib9.o" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586253627, "dur":478, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586254106, "dur":1386, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/dgrx_o.Security.o" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586255492, "dur":112, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586255605, "dur":512, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/dwiu_Generics27.o" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586256118, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586256207, "dur":573, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/r9lz_Generics18.o" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586256780, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586256868, "dur":443, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/rfg9_Generics10.o" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586257311, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586257416, "dur":550, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/tbgi_icMethods2.o" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586257967, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586258065, "dur":133, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/wfgn_onary_hash.o" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586258198, "dur":116, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586258314, "dur":435, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/3mzj_cluster.o" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586258749, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586258839, "dur":273, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/rpgg_decode.o" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586259112, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586259188, "dur":137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/7r23_le_CodeGen.o" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586259325, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586259425, "dur":145, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/4o96_sEmulation.o" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586259571, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586259669, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/b91u_em_CodeGen.o" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586259765, "dur":116, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586259881, "dur":113, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/oo47_gistration.o" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586259994, "dur":131, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586260126, "dur":613, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/d3il_lCallStubs.o" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586260739, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586260827, "dur":518, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/ff5p_ntsModule7.o" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586261345, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586261446, "dur":537, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/moqs_ntsModule2.o" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586261984, "dur":144, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586262129, "dur":183, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/ty1x_iveMethods.o" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586262312, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586262416, "dur":513, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/ylib_ringModule.o" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586262929, "dur":121, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586263051, "dur":113, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 zz99/6l8a_crc32.o" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586263164, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":10, "ts":629586263243, "dur":336593, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586239762, "dur":941, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586240704, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/jeul_vm2.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586240719, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586240806, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText zz99/_dummy_for_header_discovery" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586240807, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586240858, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/qo7k_System1.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586240860, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586240941, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/9y0z_System0.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586240942, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586241006, "dur":5, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/pcge_c-api3.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586241011, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586241059, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/dcj0_OSX0.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586241060, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586241149, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/3sg4_WinRT1.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586241150, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586241199, "dur":4878, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/fkfr_inRT1.lump.o" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586246077, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586246119, "dur":628, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/1896_ests2.lump.o" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586246748, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586246808, "dur":1335, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/zllr_data1.lump.o" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586248144, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586248196, "dur":1748, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/bzm1_stem3.lump.o" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586249944, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586249986, "dur":1226, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/9p1k_l_vm1.lump.o" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586251212, "dur":108, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586251320, "dur":550, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/cbg2_nalsModule.o" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586251870, "dur":388, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586252259, "dur":629, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/mw4t_System3.o" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586252889, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586252971, "dur":644, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/g5x4_mscorlib7.o" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586253615, "dur":130, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586253746, "dur":542, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/8igj_mscorlib14.o" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586254288, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586254382, "dur":560, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/hkxt_apperTable.o" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586254942, "dur":338, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586255281, "dur":725, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/zi6l_Generics5.o" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586256006, "dur":219, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586256226, "dur":484, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/6tib_Generics17.o" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586256710, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586256809, "dur":299, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/cviu_efinitions.o" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586257108, "dur":163, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586257272, "dur":616, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/1mrr_icMethods6.o" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586257889, "dur":142, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586258032, "dur":258, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/p1m8_opy_encode.o" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586258290, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586258397, "dur":362, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/mjxx_k_splitter.o" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586258759, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586258864, "dur":112, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/yd6q_bit_reader.o" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586258976, "dur":305, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586259282, "dur":229, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/ufkb_le_CodeGen.o" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586259511, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586259617, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/d1xv_le_CodeGen.o" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586259709, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586259810, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/phv6_cketBridge.o" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586259884, "dur":117, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586260002, "dur":129, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/brwf_ThunkTable.o" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586260131, "dur":160, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586260292, "dur":492, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/9v9f_Properties.o" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586260784, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586260898, "dur":242, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/scv5_ceProvider.o" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586261141, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586261234, "dur":562, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/646z_imeHelpers.o" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586261796, "dur":141, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586261938, "dur":554, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/q01o_entsModule.o" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586262492, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586262546, "dur":174, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 zz99/funa_zutil.o" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586262721, "dur":225, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586262946, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 zz99/oito_gzclose.o" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586263007, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":11, "ts":629586263095, "dur":336723, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586240703, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/jeul_vm3.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586240717, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586240825, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/7m6x_codegen0.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586240826, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586240897, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/6tim_System0.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586240898, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586240954, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/bi2o_metadata1.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586240955, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586241024, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/3xnj_tests2.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586241025, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586241076, "dur":0, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump 87li/ksi8_Win320.lump.cpp" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586241077, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586241156, "dur":5122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/3gzr_in320.lump.o" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586246278, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586246331, "dur":1145, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/08i5_z_os1.lump.o" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586247476, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586247561, "dur":425, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/lty9_rity0.lump.o" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586247987, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586248049, "dur":1060, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/y6oa_stem0.lump.o" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586249109, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586249156, "dur":975, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/cj0a_stem2.lump.o" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586250131, "dur":111, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586250243, "dur":1370, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/1moe_l_vm5.lump.o" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586251613, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586251650, "dur":594, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/iv64_MGUIModule.o" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586252244, "dur":788, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586253032, "dur":612, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/uha0_mscorlib5.o" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586253644, "dur":121, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586253765, "dur":550, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/mvse_mscorlib12.o" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586254315, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586254413, "dur":507, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/vyf5_pDataTable.o" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586254920, "dur":122, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586255042, "dur":597, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/44tb_eldValues1.o" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586255639, "dur":125, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586255765, "dur":1026, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/coyd_Generics26.o" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586256791, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586256877, "dur":463, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/r7uc_Generics1.o" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586257341, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586257429, "dur":529, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/8vcu_icMethods1.o" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586257958, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586258060, "dur":999, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/79ho_encode.o" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586259059, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586259146, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/7wv4_UI_CodeGen.o" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586259235, "dur":563, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586259799, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/wada_Initialize.o" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586259886, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586260001, "dur":124, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/vbys_ClassTable.o" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586260125, "dur":123, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586260249, "dur":541, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/pqbv_tiveModule.o" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586260790, "dur":116, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586260907, "dur":171, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/k5hx_ningHelper.o" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586261079, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586261170, "dur":453, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 87li/5ben_onServices.o" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586261624, "dur":107, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586261732, "dur":536, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/18m4_ntsModule1.o" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586262268, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586262318, "dur":509, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/fqsa_yEngine.UI.o" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586262827, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586262945, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 zz99/t0jk_gzlib.o" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586263009, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586263083, "dur":343, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Android_arm64 d8kz/14dl_ineModule1.o" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586263426, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":12, "ts":629586263459, "dur":336359, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":"bee_backend", "tid":0, "ts":629586609508, "dur":2241, "ph":"X", "name": "ProfilerWriteOutput" }
+,

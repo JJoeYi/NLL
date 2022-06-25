@@ -1,0 +1,21 @@
+{ "pid": "BuildProgram", "ph":"M", "name": "process_name", "args": {"name": "BuildProgram"} },
+{ "pid": "BuildProgram", "ph":"M", "name": "process_sort_index", "args": {"sort_index": -1} },
+{ "pid": "BuildProgram", "tid": 1, "ph":"M", "name": "thread_name", "args": {"name": "Main thread"} },
+{ "pid": "BuildProgram", "tid": 1,"ts": 629154076804.1,"dur": 403167.9, "ph":"X", "name": "BuildProgram"},
+{ "pid": "BuildProgram", "tid": 1,"ts": 629154076874.1,"dur": 38121.5, "ph":"X", "name": "BuildProgramContextCCtor"},
+{ "pid": "BuildProgram", "tid": 1,"ts": 629154188844.2,"dur": 19728.7, "ph":"X", "name": "SetupConversion"},
+{ "pid": "BuildProgram", "tid": 1,"ts": 629154293279.7,"dur": 138768.9, "ph":"X", "name": "GeneratedCode.SetupSpecificConfiguration"},
+{ "pid": "BuildProgram", "tid": 1,"ts": 629154294416.6,"dur": 137630.6, "ph":"X", "name": "SetupSpecificConfigImpl libil2cpp", "args": { "detail": "release_Android_arm64"}
+},
+{ "pid": "BuildProgram", "tid": 1,"ts": 629154302788.1,"dur": 99670.1, "ph":"X", "name": "SetupSpecificConfigImpl il2cpp", "args": { "detail": "release_Android_arm64"}
+},
+{ "pid": "BuildProgram", "tid": 1,"ts": 629154303962.1,"dur": 72087.2, "ph":"X", "name": "SetupSpecificConfigImpl bdwgc", "args": { "detail": "release_Android_arm64"}
+},
+{ "pid": "BuildProgram", "tid": 1,"ts": 629154376067.1,"dur": 3745.6, "ph":"X", "name": "SetupSpecificConfigImpl zlib", "args": { "detail": "release_Android_arm64"}
+},
+{ "pid": "BuildProgram", "tid": 1,"ts": 629154432048.9,"dur": 7077.5, "ph":"X", "name": "PostProcessBuiltNativeProgram"},
+{ "pid": "BuildProgram", "tid": 1,"ts": 629154439126.6,"dur": 5803.7, "ph":"X", "name": "DeployTo"},
+{ "pid": "BuildProgram", "tid": 1,"ts": 629154444933.2,"dur": 383.9, "ph":"X", "name": "DeployMetadata"},
+{ "pid": "BuildProgram", "tid": 1,"ts": 629154455218,"dur": 4020.6, "ph":"X", "name": "OutputData.Write"},
+{ "pid": "BuildProgram", "tid": 1,"ts": 629154459238.8,"dur": 20732.7, "ph":"X", "name": "Backend.Write"},
+{ "pid": "BuildProgram", "tid": 1,"ts": 629154459904.1,"dur": 18010.7, "ph":"X", "name": "JsonToString"},
