@@ -6,6 +6,8 @@
         <entry key="..\:/Users/JY/AndroidStudioProjects/nll/app/src/main/res/drawable-v24/ic_switch_camera_white_48dp.xml" value="0.332" />
         <entry key="..\:/Users/JY/AndroidStudioProjects/nll/app/src/main/res/drawable/ic_baseline_camera_24.xml" value="0.2435" />
         <entry key="..\:/Users/JY/AndroidStudioProjects/nll/app/src/main/res/drawable/ic_flash_on_24.xml" value="0.332" />
+        <entry key="..\:/Users/JY/AndroidStudioProjects/nll/app/src/main/res/drawable/ic_launcher_newNLLicon_background.xml" value="0.1395" />
+        <entry key="..\:/Users/JY/AndroidStudioProjects/nll/app/src/main/res/drawable/ic_launcher_nll_background.xml" value="0.1395" />
         <entry key="..\:/Users/JY/AndroidStudioProjects/nll/app/src/main/res/drawable/ic_temp_play_24.xml" value="0.2435" />
         <entry key="..\:/Users/JY/AndroidStudioProjects/nll/app/src/main/res/drawable/ic_temp_vault_24.xml" value="0.2435" />
         <entry key="..\:/Users/JY/AndroidStudioProjects/nll/app/src/main/res/drawable/top_action_bar_scrim.xml" value="0.307" />
@@ -30,6 +32,7 @@
         <entry key="..\:/Users/JY/AndroidStudioProjects/nll/app/src/main/res/layout/toggle_style.xml" value="0.3359375" />
         <entry key="..\:/Users/JY/AndroidStudioProjects/nll/app/src/main/res/layout/vault_main_fragment_layout.xml" value="0.33" />
         <entry key="..\:/Users/JY/AndroidStudioProjects/nll/app/src/main/res/menu/bottom_nav_menu.xml" value="0.251171875" />
+        <entry key="..\:/Users/JY/AndroidStudioProjects/nll/app/src/main/res/mipmap-anydpi-v26/ic_launcher_NLL.xml" value="0.2795" />
       </map>
     </option>
   </component>
