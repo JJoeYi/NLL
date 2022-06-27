@@ -1,5 +1,6 @@
 package com.orbitalnll.nll;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -10,11 +11,13 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
+import com.google.android.material.button.MaterialButton;
 import com.google.android.material.card.MaterialCardView;
 
 public class vaultMainFragment extends Fragment implements View.OnClickListener {
     MaterialCardView pushUpCard;
     NavController controller;
+    MaterialButton trybtn;
     // private long mLastClickTime = 0;
 
     public vaultMainFragment() {
@@ -32,6 +35,10 @@ public class vaultMainFragment extends Fragment implements View.OnClickListener 
         view.findViewById(R.id.accessories_mini_cardView).setOnClickListener(this);
         view.findViewById(R.id.warmup_mini_cardView).setOnClickListener(this);
 
+        view.findViewById(R.id.push_up_trybtn).setOnClickListener(this);
+        view.findViewById(R.id.sit_up_tryBtn).setOnClickListener(this);
+        view.findViewById(R.id.squat_tryBtn).setOnClickListener(this);
+
         controller = Navigation.findNavController(view);
         super.onViewCreated(view, savedInstanceState);
     }
@@ -40,33 +47,21 @@ public class vaultMainFragment extends Fragment implements View.OnClickListener 
     public void onClick(View v) {
         int id = v.getId();
 
-//        if (SystemClock.elapsedRealtime() - mLastClickTime < 1000L){
-//            return;
-//        }
-//        mLastClickTime = SystemClock.elapsedRealtime();
-//
-//        if (controller.getCurrentDestination().getId() != R.id.vaultMainFragment) {
-//            return;
-//        }
         switch (id) {
+            case R.id.push_up_trybtn:
+                Toast.makeText(getContext(), "button clicked", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), LivePreviewActivityMain.class));
+
+            case R.id.sit_up_tryBtn:
+                Toast.makeText(getContext(), "button clicked", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), LivePreviewActivityMain.class));
+
+            case R.id.squat_tryBtn:
+                Toast.makeText(getContext(), "button clicked", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), LivePreviewActivityMain.class));
+
             case R.id.push_up_cardView:
                 //TODO: add transitions
-//                FragmentNavigator.Extras fragNavExtras = new FragmentNavigator.Extras.Builder()
-//                        .addSharedElement(v, "PushUp_Transition_Name")
-//                        .build();
-//                NavDirections directions = new NavDirections() {
-//                    @Override
-//                    public int getActionId() {
-//                        return R.id.action_vaultMainFragment_to_pushUpFragment;
-//                    }
-//
-//                    @NonNull
-//                    @Override
-//                    public Bundle getArguments() {
-//                        return null;
-//                    }
-//                };
-//                controller.navigate(directions, fragNavExtras);
 
                 Toast.makeText(getActivity(), "push up card pressed", Toast.LENGTH_SHORT).show();
                 //TODO: if controller null?

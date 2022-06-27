@@ -227,39 +227,6 @@ public final class LivePreviewActivityMain extends AppCompatActivity
                 runClassification,
                 /* isStreamMode = */ true,
                 exercise));
-
-        myPP = (new PoseDetectorProcessor( // NEW SHIT
-                this,
-                poseDetectorOptions,
-                shouldShowInFrameLikelihood,
-                visualizeZ,
-                rescaleZ,
-                runClassification,
-                /* isStreamMode = */ true));
-
-//    try {
-//      switch (exercise) {
-//        case PUSH_UP:
-//          break;
-//
-//        case SQUAT:
-//          break;
-//
-//        case SIT_UP:
-//          break;
-//
-//        default:
-//          Log.e(TAG, "Unknown selected exercise: " + exercise);
-//      }
-//
-//    } catch (RuntimeException e) {
-//      Log.e(TAG, "Can not process selected exercise: " + exercise, e);
-//      Toast.makeText(
-//              getApplicationContext(),
-//              "Can not process selected exercise: " + e.getMessage(),
-//              Toast.LENGTH_LONG)
-//          .show();
-//    }
     }
 
     /**
