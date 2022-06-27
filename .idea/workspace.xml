@@ -13,38 +13,26 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9ea8b27-81cb-4a1b-a71a-d69620d54783" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gradle/7.3.3/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.3.3/checksums/md5-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.3.3/checksums/sha1-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.3.3/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.3.3/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.3.3/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/app/nll.app.androidTest.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/app/nll.app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/app/nll.app.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/app/nll.app.unitTest.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/exported/unityLibrary/exported.nll.unityLibrary.androidTest~1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/exported/unityLibrary/exported.nll.unityLibrary.unitTest~1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/nll.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/navEditor.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c9ea8b27-81cb-4a1b-a71a-d69620d54783" name="Changes" comment="fix play navigation">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/orbitalnll/nll/PlayActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/orbitalnll/nll/PlayActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unityLibrary/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/unityLibrary/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/orbitalnll/nll/preference/PreferenceUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/orbitalnll/nll/preference/PreferenceUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unityLibrary/build/il2cpp_arm64-v8a_Release/il2cpp_cache/buildstate/backend_profiler0.traceevents" beforeDir="false" afterPath="$PROJECT_DIR$/unityLibrary/build/il2cpp_arm64-v8a_Release/il2cpp_cache/buildstate/backend_profiler0.traceevents" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unityLibrary/build/il2cpp_arm64-v8a_Release/il2cpp_cache/buildstate/profile-bee.traceevents" beforeDir="false" afterPath="$PROJECT_DIR$/unityLibrary/build/il2cpp_arm64-v8a_Release/il2cpp_cache/buildstate/profile-bee.traceevents" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unityLibrary/build/il2cpp_arm64-v8a_Release/il2cpp_cache/buildstate/tundra.digestcache" beforeDir="false" afterPath="$PROJECT_DIR$/unityLibrary/build/il2cpp_arm64-v8a_Release/il2cpp_cache/buildstate/tundra.digestcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unityLibrary/build/il2cpp_arm64-v8a_Release/il2cpp_conv.traceevents" beforeDir="false" afterPath="$PROJECT_DIR$/unityLibrary/build/il2cpp_arm64-v8a_Release/il2cpp_conv.traceevents" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unityLibrary/build/il2cpp_armeabi-v7a_Release/il2cpp_cache/buildstate/backend_profiler0.traceevents" beforeDir="false" afterPath="$PROJECT_DIR$/unityLibrary/build/il2cpp_armeabi-v7a_Release/il2cpp_cache/buildstate/backend_profiler0.traceevents" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unityLibrary/build/il2cpp_armeabi-v7a_Release/il2cpp_cache/buildstate/profile-bee.traceevents" beforeDir="false" afterPath="$PROJECT_DIR$/unityLibrary/build/il2cpp_armeabi-v7a_Release/il2cpp_cache/buildstate/profile-bee.traceevents" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unityLibrary/build/il2cpp_armeabi-v7a_Release/il2cpp_cache/buildstate/tundra.digestcache" beforeDir="false" afterPath="$PROJECT_DIR$/unityLibrary/build/il2cpp_armeabi-v7a_Release/il2cpp_cache/buildstate/tundra.digestcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unityLibrary/build/il2cpp_armeabi-v7a_Release/il2cpp_conv.traceevents" beforeDir="false" afterPath="$PROJECT_DIR$/unityLibrary/build/il2cpp_armeabi-v7a_Release/il2cpp_conv.traceevents" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -414,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656166582691</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="fix play navigation">
+      <created>1656229166353</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1656229166354</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -483,6 +478,7 @@
     <MESSAGE value="embedded temporary Unity game" />
     <MESSAGE value="Changed App icon + potential bug fix" />
     <MESSAGE value="missing files" />
-    <option name="LAST_COMMIT_MESSAGE" value="missing files" />
+    <MESSAGE value="fix play navigation" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix play navigation" />
   </component>
 </project>
