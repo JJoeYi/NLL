@@ -1,9 +1,0 @@
-<changelist name="Uncommitted_changes_before_Checkout_at_25_6_2022_17_15_[Changes]" date="1656148527596" recycled="true" deleted="true">
-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_25_6_2022_17_15_[Changes]/shelved.patch" />
-  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 25/6/2022 17:15 [Changes]" />
-  <binary>
-    <option name="BEFORE_PATH" />
-    <option name="AFTER_PATH" value="exported/unityLibrary/build/il2cpp_arm64-v8a_Release/il2cpp_cache/buildstate/TundraBuildState.state.map" />
-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_25_6_2022_17_15_[Changes]/TundraBuildState.state.map" />
-  </binary>
-</changelist>
