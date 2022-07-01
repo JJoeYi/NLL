@@ -110,6 +110,7 @@ public final class LivePreviewActivityMain extends AppCompatActivity
         bNV.setSelectedItemId(R.id.page_smartrack);
         bNV.setOnItemSelectedListener(this);
 
+        // Spinner
         Spinner spinner = findViewById(R.id.spinner);
         List<String> exerciseList = new ArrayList<>();
         exerciseList.add(PUSH_UP);
