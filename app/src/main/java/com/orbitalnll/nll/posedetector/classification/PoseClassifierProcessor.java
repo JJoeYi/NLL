@@ -48,14 +48,16 @@ public class PoseClassifierProcessor {
   private static final String PUSHUPS_CLASS = "pushups_down";
   private static final String SQUATS_CLASS = "squats_down";
   private static final String SITUPS_CLASS = "situps_down";
+  private static final String LUNGES_CLASS = "lunges_down";
   private static final String[] POSE_CLASSES = {
-    PUSHUPS_CLASS, SQUATS_CLASS, SITUPS_CLASS
+    PUSHUPS_CLASS, SQUATS_CLASS, SITUPS_CLASS, LUNGES_CLASS
   };
 
   // Spinner strings from LivePreviewActivityMain
   private static final String PUSH_UP = "Push Up";
   private static final String SQUAT = " Squat";
   private static final String SIT_UP = "Sit Up";
+  private static final String LUNGES = "Lunges";
 
   private final boolean isStreamMode;
 
@@ -92,6 +94,7 @@ public class PoseClassifierProcessor {
     SPINNER_TO_CLASSNAME.put(PUSH_UP, PUSHUPS_CLASS);
     SPINNER_TO_CLASSNAME.put(SIT_UP, SITUPS_CLASS);
     SPINNER_TO_CLASSNAME.put(SQUAT, SQUATS_CLASS);
+    SPINNER_TO_CLASSNAME.put(LUNGES, LUNGES_CLASS);
     loadPoseSamples(context);
   }
 
@@ -154,12 +157,12 @@ public class PoseClassifierProcessor {
             ToneGenerator tg = new ToneGenerator(AudioManager.STREAM_NOTIFICATION, 100);
             tg.startTone(ToneGenerator.TONE_PROP_BEEP);
             lastRepResult = String.format(
-                    Locale.US, "%s : %d reps", repCounter.getClassName(), repsAfter);
-            break;
+                    Locale.US, "%s : %d reps \n Good Form", repCounter.getClassName(), repsAfter);
+           break;
           }
         }
       }
-      result.add(lastRepResult);
+      result.add(lastRepResult);;
     }
 
     // Add maxConfidence class of current frame to result if pose is found.
@@ -174,11 +177,15 @@ public class PoseClassifierProcessor {
 //      result.add(maxConfidenceClassResult);
 //    }
 
-    result.add(String.format(
-            Locale.US,
-            "%s : %.2f confidence",
+    /***        Locale.US,
+            "Good",
             SPINNER_TO_CLASSNAME.get(chooseEx),
             classification.getClassConfidence(SPINNER_TO_CLASSNAME.get(chooseEx)) / poseClassifier.confidenceRange()));
+    result.add(String.format(
+            Locale.US,
+            "Form"));
+    */
+
     return result;
   }
 
