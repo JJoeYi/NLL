@@ -40,7 +40,7 @@ public class PoseGraphic extends Graphic {
   private static final float DOT_RADIUS = 8.0f;
   private static final float IN_FRAME_LIKELIHOOD_TEXT_SIZE = 30.0f;
   private static final float STROKE_WIDTH = 10.0f;
-  private static final float POSE_CLASSIFICATION_TEXT_SIZE = 90.0f;
+  private static final float POSE_CLASSIFICATION_TEXT_SIZE = 100.0f;
 
   private final Pose pose;
   private final boolean showInFrameLikelihood;
