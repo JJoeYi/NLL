@@ -270,18 +270,18 @@ public final class LivePreviewActivityMain extends AppCompatActivity
 
         switch (id) {
             case R.id.page_smartrack:
-                Toast.makeText(getApplicationContext(), "already on SmarTrack page!", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(), "already on SmarTrack page!", Toast.LENGTH_SHORT).show();
                 return true;
 
             case R.id.page_play:
-                Toast.makeText(getApplicationContext(), "play pressed", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(), "play pressed", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(), PlayActivity.class)
                         .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK));
 
                 return true;
 
             case R.id.page_vault:
-                Toast.makeText(getApplicationContext(), "vault pressed", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(), "vault pressed", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(), VaultActivity.class)
                         .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK));
                 return true;

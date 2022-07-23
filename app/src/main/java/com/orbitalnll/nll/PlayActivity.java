@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -57,17 +56,17 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (id) {
             case R.id.page_smartrack:
-                Toast.makeText(getApplicationContext(), "smarTrack pressed", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(), "smarTrack pressed", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(), LivePreviewActivityMain.class)
                         .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK));
                 return true;
 
             case R.id.page_play:
-                Toast.makeText(getApplicationContext(), "Play! pressed", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(), "Play! pressed", Toast.LENGTH_SHORT).show();
                 return true;
 
             case R.id.page_vault:
-                Toast.makeText(getApplicationContext(), "vault pressed", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(), "vault pressed", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(), VaultActivity.class)
                         .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK));
                 return true;

@@ -43,6 +43,7 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
         moveTaskToBack(true);
     }
 
+
     // Callback before Unity player process is killed
     @Override public void onUnityPlayerQuitted() {
     }

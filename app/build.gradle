@@ -9,10 +9,12 @@ repositories {
 
 android {
     compileSdk 32
-
+    aaptOptions {
+        noCompress '.unity3d', '.ress', '.resource', '.obb'
+    }
     defaultConfig {
         applicationId "com.orbitalnll.nll"
-        minSdk 23
+        minSdk 26
         targetSdk 32
         versionCode 1
         versionName "1.0"
