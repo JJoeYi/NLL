@@ -157,7 +157,7 @@ public class PoseClassifierProcessor {
             ToneGenerator tg = new ToneGenerator(AudioManager.STREAM_NOTIFICATION, 100);
             tg.startTone(ToneGenerator.TONE_PROP_BEEP);
             lastRepResult = String.format(
-                    Locale.US, "%s : %d reps \n Good Form", repCounter.getClassName(), repsAfter);
+                    Locale.US, "%s : %d reps", repCounter.getClassName(), repsAfter);
            break;
           }
         }
