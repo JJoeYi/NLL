@@ -33,6 +33,15 @@ The squat is one of the three lifts in the strength sport of powerlifting, toget
         obliques), but sit-ups have a fuller range of motion and condition additional muscles.
     </string>
 
+    <string name="lunges_details" >
+        The lunge is a great exercise that targets your lower body, namely the quads, glutes, and hamstrings. To properly
+        perform a forward lunge, one starts by standing straight. Take a big step forward, keeping your upper body straight
+        as much as possible. Make sure that you knee stays inline with your front foot and does not come forward over your toes.
+        When the thigh of your front leg is parallel to the floor, push through the heel of your front foot and return to the start position.
+
+    </string>
+
+
     <string name="cardio_mini_details">
         Aerobic exercise (also known as endurance activities, cardio or cardio-respiratory exercise) is physical exercise of
         low to high intensity that depends primarily on the aerobic energy-generating process. "Aerobic" is defined as
