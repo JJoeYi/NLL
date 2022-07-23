@@ -30,6 +30,7 @@ public class vaultMainFragment extends Fragment implements View.OnClickListener 
         view.findViewById(R.id.push_up_cardView).setOnClickListener(this);
         view.findViewById(R.id.sit_up_cardView).setOnClickListener(this);
         view.findViewById(R.id.squat_cardView).setOnClickListener(this);
+        view.findViewById(R.id.lunges_cardView).setOnClickListener(this);
         view.findViewById(R.id.cardio_mini_cardView).setOnClickListener(this);
         view.findViewById(R.id.strength_mini_cardView).setOnClickListener(this);
         view.findViewById(R.id.accessories_mini_cardView).setOnClickListener(this);
@@ -38,6 +39,7 @@ public class vaultMainFragment extends Fragment implements View.OnClickListener 
         view.findViewById(R.id.push_up_trybtn).setOnClickListener(this);
         view.findViewById(R.id.sit_up_tryBtn).setOnClickListener(this);
         view.findViewById(R.id.squat_tryBtn).setOnClickListener(this);
+        view.findViewById(R.id.lunges_tryBtn).setOnClickListener(this);
 
         controller = Navigation.findNavController(view);
         super.onViewCreated(view, savedInstanceState);
@@ -60,6 +62,10 @@ public class vaultMainFragment extends Fragment implements View.OnClickListener 
                 Toast.makeText(getContext(), "button clicked", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getContext(), LivePreviewActivityMain.class));
 
+            case R.id.lunges_tryBtn:
+                Toast.makeText(getContext(), "button clicked", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), LivePreviewActivityMain.class));
+
             case R.id.push_up_cardView:
                 //TODO: add transitions
 
@@ -77,6 +83,12 @@ public class vaultMainFragment extends Fragment implements View.OnClickListener 
                 Toast.makeText(getActivity(), "sit up card pressed", Toast.LENGTH_SHORT).show();
                 controller.navigate(R.id.action_vaultMainFragment_to_sitUpFragment);
                 return;
+
+            case R.id.lunges_cardView:
+                Toast.makeText(getActivity(), "lunges card pressed", Toast.LENGTH_SHORT).show();
+                controller.navigate(R.id.action_vaultMainFragment_to_lungesFragment);
+                return;
+
             case R.id.cardio_mini_cardView:
                 Toast.makeText(getActivity(), "cardio mini pressed", Toast.LENGTH_SHORT).show();
                 controller.navigate(R.id.action_vaultMainFragment_to_cardioMiniFragment);

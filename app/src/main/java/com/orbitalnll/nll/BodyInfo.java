@@ -14,6 +14,7 @@ public class BodyInfo {
     private static final String PUSH_UP = "Push Up";
     private static final String SQUAT = " Squat";
     private static final String SIT_UP = "Sit Up";
+    private static final String LUNGES = "Lunges";
 
     private Pose pose;
 
@@ -57,6 +58,9 @@ public class BodyInfo {
                 break;
 
             case SIT_UP:
+                break;
+
+            case LUNGES:
                 break;
 
             default:
