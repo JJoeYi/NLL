@@ -30,6 +30,9 @@
         <action
             android:id="@+id/action_vaultMainFragment_to_warmUpMiniFragment"
             app:destination="@id/warmUpMiniFragment" />
+        <action
+            android:id="@+id/action_vaultMainFragment_to_lungesFragment"
+            app:destination="@id/lungesFragment" />
     </fragment>
     <fragment
         android:id="@+id/pushUpFragment"
@@ -85,6 +88,14 @@
         android:label="AccessoriesMiniFragment" >
         <action
             android:id="@+id/action_accessoriesMiniFragment_to_vaultMainFragment"
+            app:destination="@id/vaultMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lungesFragment"
+        android:name="com.orbitalnll.nll.LungesFragment"
+        android:label="LungesFragment" >
+        <action
+            android:id="@+id/action_lungesFragment_to_vaultMainFragment"
             app:destination="@id/vaultMainFragment" />
     </fragment>
 </navigation>

@@ -3,7 +3,6 @@ package com.orbitalnll.nll;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -30,7 +29,7 @@ public class SitUpFragment extends Fragment {
 
                 switch (id) {
                     case R.id.sit_up_tryBtn:
-                        Toast.makeText(getContext(), "button clicked", Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(getContext(), "button clicked", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(getContext(), LivePreviewActivityMain.class));
                 }
             }

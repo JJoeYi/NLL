@@ -136,7 +136,7 @@ public class PoseDetectorProcessor
               List<String> classificationResult = new ArrayList<>();
               if (runClassification) {
                 if (poseClassifierProcessor == null) {
-                  poseClassifierProcessor = new PoseClassifierProcessor(context, isStreamMode);
+                  poseClassifierProcessor = new PoseClassifierProcessor(context, isStreamMode, chooseEx);
                 }
                 classificationResult = poseClassifierProcessor.getPoseResult(pose);
               }
@@ -156,7 +156,7 @@ public class PoseDetectorProcessor
               List<String> classificationResult = new ArrayList<>();
               if (runClassification) {
                 if (poseClassifierProcessor == null) {
-                  poseClassifierProcessor = new PoseClassifierProcessor(context, isStreamMode);
+                  poseClassifierProcessor = new PoseClassifierProcessor(context, isStreamMode, chooseEx);
                 }
                 classificationResult = poseClassifierProcessor.getPoseResult(pose);
               }

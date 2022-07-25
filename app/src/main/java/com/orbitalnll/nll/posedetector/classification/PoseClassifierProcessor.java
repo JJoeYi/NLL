@@ -31,6 +31,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 
@@ -47,9 +48,16 @@ public class PoseClassifierProcessor {
   private static final String PUSHUPS_CLASS = "pushups_down";
   private static final String SQUATS_CLASS = "squats_down";
   private static final String SITUPS_CLASS = "situps_down";
+  private static final String LUNGES_CLASS = "lunges_down";
   private static final String[] POSE_CLASSES = {
-    PUSHUPS_CLASS, SQUATS_CLASS, SITUPS_CLASS
+    PUSHUPS_CLASS, SQUATS_CLASS, SITUPS_CLASS, LUNGES_CLASS
   };
+
+  // Spinner strings from LivePreviewActivityMain
+  private static final String PUSH_UP = "Push Up";
+  private static final String SQUAT = " Squat";
+  private static final String SIT_UP = "Sit Up";
+  private static final String LUNGES = "Lunges";
 
   private final boolean isStreamMode;
 
@@ -57,16 +65,36 @@ public class PoseClassifierProcessor {
   private List<RepetitionCounter> repCounters;
   private PoseClassifier poseClassifier;
   private String lastRepResult;
+  private String chooseEx;
+  private HashMap<String, String> SPINNER_TO_CLASSNAME;
+
+//  @WorkerThread
+//  public PoseClassifierProcessor(Context context, boolean isStreamMode) {
+//    Preconditions.checkState(Looper.myLooper() != Looper.getMainLooper());
+//    this.isStreamMode = isStreamMode;
+//    if (isStreamMode) {
+//      emaSmoothing = new EMASmoothing();
+//      repCounters = new ArrayList<>();
+//      lastRepResult = "";
+//    }
+//    loadPoseSamples(context);
+//  }
 
   @WorkerThread
-  public PoseClassifierProcessor(Context context, boolean isStreamMode) {
+  public PoseClassifierProcessor(Context context, boolean isStreamMode, String chooseEx) {
     Preconditions.checkState(Looper.myLooper() != Looper.getMainLooper());
     this.isStreamMode = isStreamMode;
+    this.chooseEx = chooseEx;
     if (isStreamMode) {
       emaSmoothing = new EMASmoothing();
       repCounters = new ArrayList<>();
       lastRepResult = "";
     }
+    this.SPINNER_TO_CLASSNAME = new HashMap<>();
+    SPINNER_TO_CLASSNAME.put(PUSH_UP, PUSHUPS_CLASS);
+    SPINNER_TO_CLASSNAME.put(SIT_UP, SITUPS_CLASS);
+    SPINNER_TO_CLASSNAME.put(SQUAT, SQUATS_CLASS);
+    SPINNER_TO_CLASSNAME.put(LUNGES, LUNGES_CLASS);
     loadPoseSamples(context);
   }
 
@@ -121,31 +149,42 @@ public class PoseClassifierProcessor {
       }
 
       for (RepetitionCounter repCounter : repCounters) {
-        int repsBefore = repCounter.getNumRepeats();
-        int repsAfter = repCounter.addClassificationResult(classification);
-        if (repsAfter > repsBefore) {
-          // Play a fun beep when rep counter updates.
-          ToneGenerator tg = new ToneGenerator(AudioManager.STREAM_NOTIFICATION, 100);
-          tg.startTone(ToneGenerator.TONE_PROP_BEEP);
-          lastRepResult = String.format(
-              Locale.US, "%s : %d reps", repCounter.getClassName(), repsAfter);
-          break;
+        if (repCounter.getClassName() == SPINNER_TO_CLASSNAME.get(chooseEx)) {
+          int repsBefore = repCounter.getNumRepeats();
+          int repsAfter = repCounter.addClassificationResult(classification);
+          if (repsAfter > repsBefore) {
+            // Play a fun beep when rep counter updates.
+            ToneGenerator tg = new ToneGenerator(AudioManager.STREAM_NOTIFICATION, 100);
+            tg.startTone(ToneGenerator.TONE_PROP_BEEP);
+            lastRepResult = String.format(
+                    Locale.US, "%s : %d reps", repCounter.getClassName(), repsAfter);
+           break;
+          }
         }
       }
-      result.add(lastRepResult);
+      result.add(lastRepResult);;
     }
 
     // Add maxConfidence class of current frame to result if pose is found.
-    if (!pose.getAllPoseLandmarks().isEmpty()) {
-      String maxConfidenceClass = classification.getMaxConfidenceClass();
-      String maxConfidenceClassResult = String.format(
-          Locale.US,
-          "%s : %.2f confidence",
-          maxConfidenceClass,
-          classification.getClassConfidence(maxConfidenceClass)
-              / poseClassifier.confidenceRange());
-      result.add(maxConfidenceClassResult);
-    }
+//    if (!pose.getAllPoseLandmarks().isEmpty()) {
+//      String maxConfidenceClass = classification.getMaxConfidenceClass();
+//      String maxConfidenceClassResult = String.format(
+//          Locale.US,
+//          "%s : %.2f confidence",
+//          maxConfidenceClass,
+//          classification.getClassConfidence(maxConfidenceClass)
+//              / poseClassifier.confidenceRange());
+//      result.add(maxConfidenceClassResult);
+//    }
+
+    /***        Locale.US,
+            "Good",
+            SPINNER_TO_CLASSNAME.get(chooseEx),
+            classification.getClassConfidence(SPINNER_TO_CLASSNAME.get(chooseEx)) / poseClassifier.confidenceRange()));
+    result.add(String.format(
+            Locale.US,
+            "Form"));
+    */
 
     return result;
   }

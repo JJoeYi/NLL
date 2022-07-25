@@ -3,30 +3,34 @@ apply plugin: 'com.android.library'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation(name: 'UnityAds', ext:'aar')
-    implementation(name: 'billing-3.0.3', ext:'aar')
-    implementation(name: 'UnityAdsAndroidPlugin', ext:'aar')
-    implementation(name: 'common', ext:'aar')
+    implementation(name: 'arcore_client', ext:'aar')
+    implementation(name: 'ARPresto', ext:'aar')
+    implementation(name: 'UnityARCore', ext:'aar')
+    implementation(name: 'unityandroidpermissions', ext:'aar')
 
 }
 
 android {
-    compileSdkVersion 32
-    buildToolsVersion '30.0.3'
+    compileSdkVersion 30
+    buildToolsVersion '30.0.2'
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+    aaptOptions {
+        noCompress '.unity3d', '.ress', '.resource', '.obb'
+    }
+
     defaultConfig {
-        minSdkVersion 23
-        targetSdkVersion 32
+        minSdkVersion 26
+        targetSdkVersion 30
         ndk {
-            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86'
+            abiFilters 'armeabi-v7a', 'arm64-v8a'
         }
         versionCode 1
-        versionName '1.0'
+        versionName '0.1'
         consumerProguardFiles 'proguard-unity.txt'
     }
 
@@ -59,6 +63,7 @@ def BuildIl2Cpp(String workingDir, String configuration, String architecture, St
     commandLineArgs.add("--outputpath=" + workingDir + "/src/main/jniLibs/" + abi + "/libil2cpp.so")
     commandLineArgs.add("--libil2cpp-static")
     commandLineArgs.add("--baselib-directory=" + workingDir + "/src/main/jniStaticLibs/" + abi)
+    commandLineArgs.add("--incremental-g-c-time-slice=3")
     commandLineArgs.add("--configuration=" + configuration)
     commandLineArgs.add("--dotnetprofile=unityaot-linux")
     commandLineArgs.add("--profiler-report")
