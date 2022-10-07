@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -49,19 +48,19 @@ public class VaultActivity extends AppCompatActivity
 
         switch (id) {
             case R.id.page_smartrack:
-                Toast.makeText(getApplicationContext(), "smarTrack pressed", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(), "smarTrack pressed", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(), LivePreviewActivityMain.class)
                         .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK));
                 return true;
 
             case R.id.page_play:
-                Toast.makeText(getApplicationContext(), "Play! pressed", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(), "Play! pressed", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(), PlayActivity.class)
                         .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK));
                 return true;
 
             case R.id.page_vault:
-                Toast.makeText(getApplicationContext(), "already on vault page", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(), "already on vault page", Toast.LENGTH_SHORT).show();
                 return true;
             default:
                 return false;

@@ -7,7 +7,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/bottom_nav_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
@@ -67,6 +67,7 @@
                             android:orientation="vertical">
 
                             <!-- Image -->
+
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="194dp"
@@ -175,6 +176,7 @@
                                 android:orientation="horizontal">
 
                                 <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/squat_tryBtn"
                                     style="?attr/borderlessButtonStyle"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -242,6 +244,7 @@
                                 android:orientation="horizontal">
 
                                 <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/sit_up_tryBtn"
                                     style="?attr/borderlessButtonStyle"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -250,6 +253,76 @@
                             </LinearLayout>
                         </LinearLayout>
                     </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/lunges_cardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardElevation="0dp"
+                        app:strokeColor="@color/black"
+                        app:strokeWidth="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <!-- Image -->
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="194dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/lunges_card_pic" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="16dp">
+
+                                <!-- Title, secondary and supporting text -->
+
+                                <TextView
+                                    style="@style/TextAppearance.AppCompat.Headline"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/pt_serif"
+                                    android:text="Lunge"
+                                    android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                                <TextView
+                                    style="@style/TextAppearance.AppCompat.Caption"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="The lunge is..."
+                                    android:textAppearance="?attr/textAppearanceBody2"
+                                    android:textColor="?android:attr/textColorSecondary" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/lunges_tryBtn"
+                                    style="?attr/borderlessButtonStyle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:text="TRY IT OUT IN SMARTRACK" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+
 
                 </LinearLayout>
             </HorizontalScrollView>

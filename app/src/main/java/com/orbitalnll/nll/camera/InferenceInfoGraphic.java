@@ -1,3 +1,4 @@
+/***
 package com.orbitalnll.nll.camera;/*
  * Copyright 2020 Google LLC. All rights reserved.
  *
@@ -20,7 +21,7 @@ import android.graphics.Paint;
 
 import androidx.annotation.Nullable;
 
-/** Graphic instance for rendering inference info (latency, FPS, resolution) in an overlay view. */
+/** Graphic instance for rendering inference info (latency, FPS, resolution) in an overlay view.
 public class InferenceInfoGraphic extends GraphicOverlay.Graphic {
 
   private static final int TEXT_COLOR = Color.WHITE;
@@ -52,7 +53,7 @@ public class InferenceInfoGraphic extends GraphicOverlay.Graphic {
     postInvalidate();
   }
 
-  /** Creates an {@link InferenceInfoGraphic} to only display image size. */
+  /** Creates an {@link InferenceInfoGraphic} to only display image size.
   public InferenceInfoGraphic(GraphicOverlay overlay) {
     this(overlay, 0, 0, null);
     showLatencyInfo = false;
@@ -86,3 +87,4 @@ public class InferenceInfoGraphic extends GraphicOverlay.Graphic {
         "Detector latency: " + detectorLatency + " ms", x, y + TEXT_SIZE * 2, textPaint);
   }
 }
+*/

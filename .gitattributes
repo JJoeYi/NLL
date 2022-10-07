@@ -1,0 +1,5 @@
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.so filter=lfs diff=lfs merge=lfs -text
+*.dbg.so filter=lfs diff=lfs merge=lfs -text
+*.dbg filter=lfs diff=lfs merge=lfs -text
+*.dbs.so filter=lfs diff=lfs merge=lfs -text
