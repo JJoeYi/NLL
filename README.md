@@ -4,7 +4,7 @@
 NLL is a Android  App that incorporates live-video tracking to enhance your journey in learning about Fitness. 💪
 
 It is also [@JJoeYi](https://github.com/JJoeYi) and [@LimZhi](https://github.com/LimZhi)'s submission for National University of
-Singapore's (NUS) [Orbital](https://orbital.comp.nus.edu.sg/) Programme 2022. 🏫
+Singapore's [Orbital](https://orbital.comp.nus.edu.sg/) Programme 2022. 🏫
 
 To see a more detailed write up on our app, please [visit our documentation on Google Docs 📃](https://docs.google.com/document/d/1JdvIU2t6Q5_ZbkMhQgxv2AW4Y5tKmckMDkzAb7YjCvk/edit) 
 ## Features
