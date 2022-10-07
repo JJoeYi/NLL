@@ -12,8 +12,8 @@ To see a more detailed write up on our app, please [visit our documentation on G
 - SmarTrack: Live pose tracking and  Machine Learning to determine if you
 did an exercise with proper form
 
-![SmarTrack Image 1](https://raw.githubusercontent.com/JJoeYi/NLL/215b364ed7938464114ae6a86f735a705bb317d3/app/src/main/res/drawable/smartrack_squat.png?token=GHSAT0AAAAAABZPUPPSZBUS5IGQVFLIGGGYY2AK2FQ)
-![SmarTrack Image 2](https://raw.githubusercontent.com/JJoeYi/NLL/215b364ed7938464114ae6a86f735a705bb317d3/app/src/main/res/drawable/smartrack_pushup.png?token=GHSAT0AAAAAABZPUPPS7ZYS7P27LGUSFJ6GY2AK25A) 
+![SmarTrack Image 1](app/src/main/res/drawable/smartrack_squat.png?token=GHSAT0AAAAAABZPUPPSZBUS5IGQVFLIGGGYY2AK2FQ)
+![SmarTrack Image 2](app/src/main/res/drawable/smartrack_pushup.png?token=GHSAT0AAAAAABZPUPPS7ZYS7P27LGUSFJ6GY2AK25A) 
 
 - Play: Games that makes exercising fun! Designed AR games that makes you  
 move to enjoy the game. 
